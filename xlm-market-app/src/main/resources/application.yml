@@ -1,0 +1,5 @@
+spring:
+  config:
+    name: xlm-market-app
+  profiles:
+    active: dev
