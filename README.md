@@ -1,2 +1,4 @@
-# xfg-frame-archetype - DDD 脚手架
+# xlm-market
+
+一个营销项目（开发中）
 
