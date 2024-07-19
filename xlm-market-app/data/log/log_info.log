@@ -227,3 +227,24 @@
 24-07-18.14:20:48.310 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：104 - 6000 策略配置
 24-07-18.14:20:48.320 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 24-07-18.14:20:48.322 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-19.19:19:52.281 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_412 on lumine.local with PID 96909 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-19.19:19:52.282 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-07-19.19:19:52.818 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-19.19:19:52.820 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-19.19:19:52.840 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+24-07-19.19:19:53.426 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-19.19:19:53.458 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-19.19:19:53.594 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-19.19:19:53.603 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-19.19:19:55.217 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-19.19:19:55.261 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 3.263 seconds (JVM running for 4.326)
+24-07-19.19:22:26.663 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:xuluming strategyId:100001 ruleModel:rule_blacklist
+24-07-19.19:22:26.826 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-19.19:22:28.388 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-19.19:23:36.199 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m7s705ms).
+24-07-19.19:23:36.875 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:xuluming strategyId:100001 ruleModel:rule_weight
+24-07-19.19:23:36.884 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: xuluming ruleModel: rule_weight code: 0001 info: 接管；后续的流程，受规则引擎执行结果影响
+24-07-19.19:23:37.044 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100001,"userId":"xuluming"}
+24-07-19.19:23:37.047 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":102}
+24-07-19.19:23:37.055 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-19.19:23:37.062 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
