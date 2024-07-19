@@ -20,6 +20,10 @@ public class Strategy {
      */
     private long strategyId;
     /**
+     * 抽奖规则模型
+     */
+    private String ruleModels;
+    /**
      * 抽奖策略描述
      */
     private String strategyDesc;

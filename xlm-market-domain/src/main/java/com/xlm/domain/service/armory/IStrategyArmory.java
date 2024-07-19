@@ -23,5 +23,5 @@ public interface IStrategyArmory {
      * @param strategyId
      * @return
      */
-    Integer getRandomAwardId(Long strategyId);
+//    Integer getRandomAwardId(Long strategyId);
 }

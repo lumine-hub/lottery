@@ -1,232 +1,229 @@
-24-07-17.13:37:59.103 [main            ] INFO  RedisTest              - Starting RedisTest using Java 1.8.0_412 on lumine.local with PID 7445 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-17.13:37:59.104 [main            ] INFO  RedisTest              - The following 1 profile is active: "dev"
-24-07-17.13:37:59.846 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-17.13:37:59.848 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-17.13:37:59.878 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
-24-07-17.13:38:00.622 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-17.13:38:00.656 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-17.13:38:00.792 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.13:38:00.806 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.13:38:02.111 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-17.13:38:02.155 [main            ] INFO  RedisTest              - Started RedisTest in 3.391 seconds (JVM running for 4.007)
-24-07-17.13:38:02.536 [main            ] INFO  RedisTest              - 101
-24-07-17.14:39:05.465 [main            ] INFO  StrategyRepositoryTest - Starting StrategyRepositoryTest using Java 1.8.0_412 on lumine.local with PID 12419 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-17.14:39:05.466 [main            ] INFO  StrategyRepositoryTest - The following 1 profile is active: "dev"
-24-07-17.14:39:05.994 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-17.14:39:05.996 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-17.14:39:06.013 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
-24-07-17.14:39:06.560 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-17.14:39:06.589 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-17.14:39:06.711 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.14:39:06.720 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.14:39:07.847 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-17.14:39:07.885 [main            ] INFO  StrategyRepositoryTest - Started StrategyRepositoryTest in 2.689 seconds (JVM running for 3.231)
-24-07-17.14:39:08.152 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-17.14:39:08.417 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-17.14:39:08.465 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-17.14:39:08.472 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-17.14:54:10.599 [main            ] INFO  StrategyRepositoryTest - Starting StrategyRepositoryTest using Java 1.8.0_412 on lumine.local with PID 13745 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-17.14:54:10.599 [main            ] INFO  StrategyRepositoryTest - The following 1 profile is active: "dev"
-24-07-17.14:54:11.174 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-17.14:54:11.176 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-17.14:54:11.191 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
-24-07-17.14:54:11.749 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-17.14:54:11.780 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-17.14:54:11.938 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.14:54:11.950 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.14:54:13.349 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-17.14:54:13.390 [main            ] INFO  StrategyRepositoryTest - Started StrategyRepositoryTest in 3.044 seconds (JVM running for 3.666)
-24-07-17.14:54:13.673 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-17.14:54:13.901 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-17.14:54:13.970 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-17.14:54:13.973 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-17.14:54:58.775 [main            ] INFO  StrategyRepositoryTest - Starting StrategyRepositoryTest using Java 1.8.0_412 on lumine.local with PID 13822 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-17.14:54:58.775 [main            ] INFO  StrategyRepositoryTest - The following 1 profile is active: "dev"
-24-07-17.14:54:59.272 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-17.14:54:59.274 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-17.14:54:59.288 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
-24-07-17.14:54:59.918 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-17.14:54:59.951 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-17.14:55:00.072 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.14:55:00.082 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.14:55:01.241 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-17.14:55:01.281 [main            ] INFO  StrategyRepositoryTest - Started StrategyRepositoryTest in 2.784 seconds (JVM running for 3.413)
-24-07-17.14:55:01.553 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-17.14:55:01.777 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-17.14:55:01.828 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-17.14:55:01.830 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-17.14:55:18.679 [main            ] INFO  StrategyRepositoryTest - Starting StrategyRepositoryTest using Java 1.8.0_412 on lumine.local with PID 13854 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-17.14:55:18.679 [main            ] INFO  StrategyRepositoryTest - The following 1 profile is active: "dev"
-24-07-17.14:55:19.212 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-17.14:55:19.213 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-17.14:55:19.231 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
-24-07-17.14:55:19.802 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-17.14:55:19.836 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-17.14:55:19.971 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.14:55:19.981 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.14:55:21.363 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-17.14:55:21.414 [main            ] INFO  StrategyRepositoryTest - Started StrategyRepositoryTest in 3.015 seconds (JVM running for 4.21)
-24-07-17.14:55:25.678 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-17.14:55:27.225 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-17.14:55:55.907 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-17.14:55:55.922 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-17.14:56:02.119 [main            ] INFO  StrategyRepositoryTest - Starting StrategyRepositoryTest using Java 1.8.0_412 on lumine.local with PID 13919 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-17.14:56:02.120 [main            ] INFO  StrategyRepositoryTest - The following 1 profile is active: "dev"
-24-07-17.14:56:02.724 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-17.14:56:02.727 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-17.14:56:02.745 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
-24-07-17.14:56:03.316 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-17.14:56:03.348 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-17.14:56:03.488 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.14:56:03.499 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.14:56:04.801 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-17.14:56:04.847 [main            ] INFO  StrategyRepositoryTest - Started StrategyRepositoryTest in 3.05 seconds (JVM running for 3.83)
-24-07-17.14:56:13.747 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-17.14:56:15.244 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-17.14:57:37.458 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m22s109ms).
-24-07-17.14:57:37.506 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-17.14:57:37.521 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-17.14:57:41.197 [main            ] INFO  StrategyRepositoryTest - Starting StrategyRepositoryTest using Java 1.8.0_412 on lumine.local with PID 14056 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-17.14:57:41.198 [main            ] INFO  StrategyRepositoryTest - The following 1 profile is active: "dev"
-24-07-17.14:57:41.804 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-17.14:57:41.806 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-17.14:57:41.826 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
-24-07-17.14:57:42.382 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-17.14:57:42.416 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-17.14:57:42.544 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.14:57:42.554 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.14:57:43.935 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-17.14:57:43.981 [main            ] INFO  StrategyRepositoryTest - Started StrategyRepositoryTest in 3.068 seconds (JVM running for 3.964)
-24-07-17.14:57:47.097 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-17.14:57:48.592 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-17.14:58:13.197 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-17.14:58:13.218 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-17.14:58:20.968 [main            ] INFO  StrategyRepositoryTest - Starting StrategyRepositoryTest using Java 1.8.0_412 on lumine.local with PID 14113 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-17.14:58:20.969 [main            ] INFO  StrategyRepositoryTest - The following 1 profile is active: "dev"
-24-07-17.14:58:21.485 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-17.14:58:21.487 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-17.14:58:21.502 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-24-07-17.14:58:22.046 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-17.14:58:22.077 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-17.14:58:22.208 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.14:58:22.217 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.14:58:23.501 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-17.14:58:23.548 [main            ] INFO  StrategyRepositoryTest - Started StrategyRepositoryTest in 2.852 seconds (JVM running for 3.578)
-24-07-17.14:58:26.880 [main            ] INFO  StrategyRepositoryTest - Starting StrategyRepositoryTest using Java 1.8.0_412 on lumine.local with PID 14120 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-17.14:58:26.881 [main            ] INFO  StrategyRepositoryTest - The following 1 profile is active: "dev"
-24-07-17.14:58:27.424 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-17.14:58:27.426 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-17.14:58:27.440 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-24-07-17.14:58:28.096 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-17.14:58:28.127 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-17.14:58:28.270 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.14:58:28.281 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.14:58:29.632 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-17.14:58:29.683 [main            ] INFO  StrategyRepositoryTest - Started StrategyRepositoryTest in 3.186 seconds (JVM running for 4.059)
-24-07-17.15:45:22.458 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_412 on lumine.local with PID 17680 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-17.15:45:22.459 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
-24-07-17.15:45:23.021 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-17.15:45:23.024 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-17.15:45:23.043 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
-24-07-17.15:45:23.635 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-17.15:45:23.668 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-17.15:45:23.793 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.15:45:23.804 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.15:45:24.961 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-17.15:45:25.001 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 2.832 seconds (JVM running for 3.327)
-24-07-17.15:45:25.253 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-17.15:45:25.493 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-17.15:45:25.566 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-17.15:45:25.572 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-17.15:46:04.449 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_412 on lumine.local with PID 17757 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-17.15:46:04.450 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
-24-07-17.15:46:04.939 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-17.15:46:04.941 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-17.15:46:04.956 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-24-07-17.15:46:05.494 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-17.15:46:05.526 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-17.15:46:05.654 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.15:46:05.665 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.15:46:06.951 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-17.15:46:06.991 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 2.806 seconds (JVM running for 3.324)
-24-07-17.15:51:47.695 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0x9084f272, L:/127.0.0.1:50081 - R:127.0.0.1/127.0.0.1:16379]
-org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:16379]
-	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
-	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
-	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
-	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
-	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
-	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.lang.Thread.run(Thread.java:750)
-24-07-17.16:05:06.946 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_412 on lumine.local with PID 19167 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-17.16:05:06.947 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
-24-07-17.16:05:07.449 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-17.16:05:07.451 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-17.16:05:07.466 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-24-07-17.16:05:08.013 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-17.16:05:08.042 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-17.16:05:08.163 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.16:05:08.173 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.16:05:09.464 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-17.16:05:09.511 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 2.831 seconds (JVM running for 3.383)
-24-07-17.16:05:47.029 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_412 on lumine.local with PID 19218 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-17.16:05:47.030 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
-24-07-17.16:05:47.541 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-17.16:05:47.543 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-17.16:05:47.557 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-24-07-17.16:05:48.105 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-17.16:05:48.136 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-17.16:05:48.264 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.16:05:48.274 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.16:05:49.655 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-17.16:05:49.707 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 2.942 seconds (JVM running for 3.675)
-24-07-17.16:11:47.476 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_412 on lumine.local with PID 19662 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-17.16:11:47.477 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
-24-07-17.16:11:47.992 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-17.16:11:47.994 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-17.16:11:48.007 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
-24-07-17.16:11:48.567 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-17.16:11:48.597 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-17.16:11:48.724 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.16:11:48.733 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.16:11:50.117 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-17.16:11:50.176 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 2.966 seconds (JVM running for 3.652)
-24-07-17.16:11:53.249 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-17.16:11:54.749 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-17.16:13:21.784 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50s430ms).
-24-07-17.16:13:23.916 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-17.16:13:23.936 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-17.16:13:37.712 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_412 on lumine.local with PID 19807 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-17.16:13:37.712 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
-24-07-17.16:13:38.230 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-17.16:13:38.231 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-17.16:13:38.246 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
-24-07-17.16:13:38.792 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-17.16:13:38.826 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-17.16:13:38.955 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.16:13:38.964 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.16:13:40.240 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-17.16:13:40.286 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 2.844 seconds (JVM running for 3.547)
-24-07-17.16:14:04.116 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_412 on lumine.local with PID 19834 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-17.16:14:04.117 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
-24-07-17.16:14:04.615 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-17.16:14:04.617 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-17.16:14:04.630 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
-24-07-17.16:14:05.152 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-17.16:14:05.184 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-17.16:14:05.315 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.16:14:05.326 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.16:14:06.565 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-17.16:14:06.609 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 2.756 seconds (JVM running for 3.488)
-24-07-17.16:14:57.528 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_412 on lumine.local with PID 19913 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-17.16:14:57.529 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
-24-07-17.16:14:58.027 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-17.16:14:58.029 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-17.16:14:58.044 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
-24-07-17.16:14:58.596 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-17.16:14:58.623 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-17.16:14:58.739 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.16:14:58.749 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-17.16:14:59.870 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-17.16:14:59.908 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 2.655 seconds (JVM running for 3.171)
+24-07-18.13:44:20.223 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 12322 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-18.13:44:20.223 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
+24-07-18.13:44:20.754 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-18.13:44:20.756 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-18.13:44:20.776 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+24-07-18.13:44:21.309 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-18.13:44:21.339 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-18.13:44:21.465 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.13:44:21.478 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.13:44:22.751 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-18.13:44:22.792 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.853 seconds (JVM running for 3.441)
+24-07-18.13:44:23.077 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-18.13:44:23.333 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-18.13:44:23.616 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：true
+24-07-18.13:44:23.629 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：102 - 奖品ID值
+24-07-18.13:44:23.638 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-18.13:44:23.644 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-18.13:47:14.286 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 12550 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-18.13:47:14.286 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
+24-07-18.13:47:14.850 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-18.13:47:14.854 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-18.13:47:14.871 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+24-07-18.13:47:15.462 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-18.13:47:15.498 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-18.13:47:15.630 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.13:47:15.644 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.13:47:17.025 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-18.13:47:17.072 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 3.058 seconds (JVM running for 4.147)
+24-07-18.13:49:02.037 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 12705 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-18.13:49:02.038 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
+24-07-18.13:49:02.552 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-18.13:49:02.553 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-18.13:49:02.569 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+24-07-18.13:49:03.159 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-18.13:49:03.191 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-18.13:49:03.321 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.13:49:03.330 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.13:49:04.676 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-18.13:49:04.727 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.97 seconds (JVM running for 3.696)
+24-07-18.13:49:27.549 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 12746 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-18.13:49:27.550 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
+24-07-18.13:49:28.048 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-18.13:49:28.050 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-18.13:49:28.067 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+24-07-18.13:49:28.611 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-18.13:49:28.641 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-18.13:49:28.762 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.13:49:28.771 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.13:49:30.031 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-18.13:49:30.077 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.798 seconds (JVM running for 3.491)
+24-07-18.13:51:46.091 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 12928 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-18.13:51:46.092 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
+24-07-18.13:51:46.651 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-18.13:51:46.654 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-18.13:51:46.677 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+24-07-18.13:51:47.282 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-18.13:51:47.313 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-18.13:51:47.443 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.13:51:47.451 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.13:51:48.770 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-18.13:51:48.815 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 3.001 seconds (JVM running for 3.757)
+24-07-18.13:53:59.040 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 13120 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-18.13:53:59.040 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
+24-07-18.13:53:59.550 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-18.13:53:59.552 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-18.13:53:59.566 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+24-07-18.13:54:00.108 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-18.13:54:00.142 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-18.13:54:00.269 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.13:54:00.279 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.13:54:01.642 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-18.13:54:01.696 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.939 seconds (JVM running for 3.664)
+24-07-18.13:54:28.757 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 13162 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-18.13:54:28.757 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
+24-07-18.13:54:29.293 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-18.13:54:29.295 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-18.13:54:29.310 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+24-07-18.13:54:29.920 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-18.13:54:29.954 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-18.13:54:30.088 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.13:54:30.097 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.13:54:31.376 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-18.13:54:31.415 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.926 seconds (JVM running for 3.659)
+24-07-18.13:55:14.566 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 13280 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-18.13:55:14.566 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
+24-07-18.13:55:15.065 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-18.13:55:15.067 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-18.13:55:15.083 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+24-07-18.13:55:15.629 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-18.13:55:15.660 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-18.13:55:15.788 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.13:55:15.798 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.13:55:17.012 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-18.13:55:17.056 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.712 seconds (JVM running for 3.194)
+24-07-18.14:05:49.550 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 14120 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-18.14:05:49.550 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
+24-07-18.14:05:50.084 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-18.14:05:50.086 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-18.14:05:50.101 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+24-07-18.14:05:50.676 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-18.14:05:50.712 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-18.14:05:50.855 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.14:05:50.866 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.14:05:52.217 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-18.14:05:52.265 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 3.008 seconds (JVM running for 3.841)
+24-07-18.14:07:50.950 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 14289 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-18.14:07:50.950 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
+24-07-18.14:07:51.485 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-18.14:07:51.487 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-18.14:07:51.502 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+24-07-18.14:07:52.044 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-18.14:07:52.075 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-18.14:07:52.199 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.14:07:52.208 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.14:07:53.498 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-18.14:07:53.541 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.853 seconds (JVM running for 3.582)
+24-07-18.14:08:02.685 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-18.14:08:04.190 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-18.14:08:15.555 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-18.14:08:15.571 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-18.14:08:17.509 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 14334 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-18.14:08:17.510 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
+24-07-18.14:08:18.024 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-18.14:08:18.026 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-18.14:08:18.043 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+24-07-18.14:08:18.581 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-18.14:08:18.611 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-18.14:08:18.734 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.14:08:18.744 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.14:08:20.173 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-18.14:08:20.217 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.963 seconds (JVM running for 3.838)
+24-07-18.14:09:54.425 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-18.14:09:55.901 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-18.14:10:59.682 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m3s675ms).
+24-07-18.14:10:59.757 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：true
+24-07-18.14:11:23.529 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：103 - 奖品ID值
+24-07-18.14:11:23.554 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-18.14:11:25.804 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-18.14:12:02.455 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 14618 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-18.14:12:02.456 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
+24-07-18.14:12:03.024 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-18.14:12:03.026 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-18.14:12:03.052 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+24-07-18.14:12:03.602 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-18.14:12:03.633 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-18.14:12:03.758 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.14:12:03.767 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.14:12:04.994 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-18.14:12:05.039 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.903 seconds (JVM running for 3.637)
+24-07-18.14:12:09.175 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-18.14:12:09.396 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-18.14:12:09.450 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：true
+24-07-18.14:12:27.324 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s927ms).
+24-07-18.14:13:14.741 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：105 - 奖品ID值
+24-07-18.14:13:14.769 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-18.14:13:14.782 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-18.14:14:13.579 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 14801 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-18.14:14:13.580 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
+24-07-18.14:14:14.097 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-18.14:14:14.098 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-18.14:14:14.119 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+24-07-18.14:14:14.658 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-18.14:14:14.691 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-18.14:14:14.818 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.14:14:14.828 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.14:14:16.141 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-18.14:14:16.188 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.879 seconds (JVM running for 3.582)
+24-07-18.14:14:16.609 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-18.14:14:16.832 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-18.14:14:16.894 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：true
+24-07-18.14:15:16.789 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56s283ms).
+24-07-18.14:15:16.791 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：101 - 奖品ID值
+24-07-18.14:15:16.832 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-18.14:15:16.842 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-18.14:15:19.793 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 14898 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-18.14:15:19.794 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
+24-07-18.14:15:20.388 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-18.14:15:20.390 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-18.14:15:20.418 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+24-07-18.14:15:20.970 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-18.14:15:21.000 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-18.14:15:21.126 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.14:15:21.135 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.14:15:22.527 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-18.14:15:22.574 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 3.071 seconds (JVM running for 3.771)
+24-07-18.14:15:23.005 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-18.14:15:23.247 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-18.14:15:23.301 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：true
+24-07-18.14:15:33.954 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：104 - 奖品ID值
+24-07-18.14:15:40.897 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-18.14:15:40.912 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-18.14:15:49.820 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 14939 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-18.14:15:49.820 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
+24-07-18.14:15:50.339 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-18.14:15:50.340 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-18.14:15:50.356 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+24-07-18.14:15:50.895 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-18.14:15:50.927 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-18.14:15:51.039 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.14:15:51.047 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.14:15:52.210 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-18.14:15:52.248 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.718 seconds (JVM running for 3.218)
+24-07-18.14:15:52.617 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-18.14:15:52.856 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-18.14:15:52.905 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：true
+24-07-18.14:15:52.907 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：0 - 4000 策略配置
+24-07-18.14:15:52.907 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：0 - 5000 策略配置
+24-07-18.14:15:52.907 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：0 - 6000 策略配置
+24-07-18.14:15:52.918 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-18.14:15:52.920 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-18.14:20:45.234 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 15335 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-18.14:20:45.234 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
+24-07-18.14:20:45.733 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-18.14:20:45.735 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-18.14:20:45.749 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+24-07-18.14:20:46.290 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-18.14:20:46.320 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-18.14:20:46.442 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.14:20:46.450 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-18.14:20:47.591 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-18.14:20:47.639 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.661 seconds (JVM running for 3.173)
+24-07-18.14:20:48.042 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-18.14:20:48.251 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-18.14:20:48.304 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：true
+24-07-18.14:20:48.307 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：103 - 4000 策略配置
+24-07-18.14:20:48.308 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：105 - 5000 策略配置
+24-07-18.14:20:48.310 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：104 - 6000 策略配置
+24-07-18.14:20:48.320 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-18.14:20:48.322 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

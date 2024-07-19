@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -17,7 +18,7 @@ import java.util.Date;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class StrategyAwardEntity {
+public class StrategyAwardEntity implements Serializable {
     /** 抽奖策略ID */
     private Long strategyId;
     /** 抽奖奖品ID - 内部流转使用 */
