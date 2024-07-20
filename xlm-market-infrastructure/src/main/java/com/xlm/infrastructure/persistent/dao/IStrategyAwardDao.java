@@ -3,6 +3,7 @@ package com.xlm.infrastructure.persistent.dao;
 import com.xlm.domain.model.StrategyAwardEntity;
 import com.xlm.infrastructure.persistent.po.StrategyAward;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -15,4 +16,6 @@ public interface IStrategyAwardDao {
     List<StrategyAward> queryAwardList();
 
     List<StrategyAward> queryStrategyAwardListByStrategyId(Long strategyId);
+
+    String queryStrategyAwardRuleModels(@Param("strategyId") Long strategyId,@Param("awardId") Integer awardId);
 }

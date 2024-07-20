@@ -3,6 +3,7 @@ package com.xlm.domain.repository;
 import com.xlm.domain.model.StrategyAwardEntity;
 import com.xlm.domain.model.StrategyEntity;
 import com.xlm.domain.model.StrategyRuleEntity;
+import com.xlm.domain.model.vo.StrategyAwardRuleModelVO;
 
 import java.util.List;
 import java.util.Map;
@@ -30,4 +31,6 @@ public interface IStrategyRepository {
     StrategyRuleEntity queryStrategyRule(Long strategyId, String ruleWeight);
 
     String queryStrategyRuleValue(Long strategyId, Integer awardId, String ruleModel);
+
+    StrategyAwardRuleModelVO queryStrategyAwardRuleModelVO(Long strategyId, Integer awardId);
 }

@@ -18,7 +18,7 @@ import javax.annotation.Resource;
 @Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class RaffleStrategyTest {
+public class RaffleStrategyTest_5 {
 
     @Resource
     private IRaffleStrategy raffleStrategy;
@@ -31,6 +31,7 @@ public class RaffleStrategyTest {
         ReflectionTestUtils.setField(ruleWeightLogicFilter, "userScore", 40500L);
     }
 
+    // work5 执行一次抽奖测试
     @Test
     public void test_performRaffle() {
         RaffleFactorEntity raffleFactorEntity = RaffleFactorEntity.builder()
@@ -43,7 +44,7 @@ public class RaffleStrategyTest {
         log.info("请求参数：{}", JSON.toJSONString(raffleFactorEntity));
         log.info("测试结果：{}", JSON.toJSONString(raffleAwardEntity));
     }
-
+    // work5 执行一次抽奖测试，通过抽奖前黑名单过滤
     @Test
     public void test_performRaffle_blacklist() {
         RaffleFactorEntity raffleFactorEntity = RaffleFactorEntity.builder()

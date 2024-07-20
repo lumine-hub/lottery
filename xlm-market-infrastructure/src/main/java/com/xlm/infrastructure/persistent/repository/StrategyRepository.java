@@ -3,6 +3,7 @@ package com.xlm.infrastructure.persistent.repository;
 import com.xlm.domain.model.StrategyAwardEntity;
 import com.xlm.domain.model.StrategyEntity;
 import com.xlm.domain.model.StrategyRuleEntity;
+import com.xlm.domain.model.vo.StrategyAwardRuleModelVO;
 import com.xlm.domain.repository.IStrategyRepository;
 import com.xlm.infrastructure.persistent.dao.IStrategyAwardDao;
 import com.xlm.infrastructure.persistent.dao.IStrategyDao;
@@ -133,4 +134,11 @@ public class StrategyRepository implements IStrategyRepository {
         strategyRule.setRuleModel(ruleModel);
         return strategyRuleDao.queryStrategyRuleValue(strategyRule);
     }
+
+    @Override
+    public StrategyAwardRuleModelVO queryStrategyAwardRuleModelVO(Long strategyId, Integer awardId) {
+        String s = strategyAwardDao.queryStrategyAwardRuleModels(strategyId, awardId);
+        return StrategyAwardRuleModelVO.builder().ruleModels(s).build();
+    }
+
 }
