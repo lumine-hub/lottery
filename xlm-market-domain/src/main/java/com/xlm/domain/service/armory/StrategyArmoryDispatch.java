@@ -1,8 +1,8 @@
 package com.xlm.domain.service.armory;
 
-import com.xlm.domain.model.StrategyAwardEntity;
-import com.xlm.domain.model.StrategyEntity;
-import com.xlm.domain.model.StrategyRuleEntity;
+import com.xlm.domain.model.entity.StrategyAwardEntity;
+import com.xlm.domain.model.entity.StrategyEntity;
+import com.xlm.domain.model.entity.StrategyRuleEntity;
 import com.xlm.domain.repository.IStrategyRepository;
 import com.xlm.types.enums.ResponseCode;
 import com.xlm.types.exception.AppException;

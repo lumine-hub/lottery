@@ -1,8 +1,8 @@
-package com.xlm.domain.service.rule.factory;
+package com.xlm.domain.service.rule.filter.factory;
 
 import com.xlm.domain.model.entity.RuleActionEntity;
 import com.xlm.domain.service.annotation.LogicStrategy;
-import com.xlm.domain.service.rule.ILogicFilter;
+import com.xlm.domain.service.rule.filter.ILogicFilter;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.springframework.core.annotation.AnnotationUtils;
@@ -30,6 +30,14 @@ public class DefaultLogicFactory {
         });
     }
 
+    /**
+     * 	1.	(Map<?, ?>)：
+     * 这是一个通配符类型转换。logicFilterMap 是一个原始类型的 Map，可能没有指定键和值的类型。通过将它转换为 Map<?, ?>，我们告诉编译器，这个 Map 的键和值可以是任何类型。这是为了消除编译器的类型检查警告，因为直接从原始类型转换为泛型类型是非法的。
+     * 	2.	(Map<String, ILogicFilter<T>>)：
+     * 这是最终的类型转换，将 Map<?, ?> 转换为 Map<String, ILogicFilter<T>>。这一步是告诉编译器，我们确信 logicFilterMap 实际上是一个 Map，其中键是 String 类型，值是 ILogicFilter<T> 类型。
+     * 为什么需要两次类型转换？
+     * 直接将 logicFilterMap 从一个原始类型转换为一个带有泛型的类型（如 Map<String, ILogicFilter<T>>）是不允许的，会导致编译错误。因此，通过先将其转换为 Map<?, ?>，我们可以消除编译器的类型检查，然后再进行具体的泛型类型转换。
+     */
     public <T extends RuleActionEntity.RaffleEntity> Map<String, ILogicFilter<T>> openLogicFilter() {
         return (Map<String, ILogicFilter<T>>) (Map<?, ?>) logicFilterMap;
     }

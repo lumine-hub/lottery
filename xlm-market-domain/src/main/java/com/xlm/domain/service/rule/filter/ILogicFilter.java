@@ -1,4 +1,4 @@
-package com.xlm.domain.service.rule;
+package com.xlm.domain.service.rule.filter;
 
 import com.xlm.domain.model.entity.RuleActionEntity;
 import com.xlm.domain.model.entity.RuleMatterEntity;

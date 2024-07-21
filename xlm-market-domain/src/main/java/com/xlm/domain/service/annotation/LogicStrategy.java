@@ -1,6 +1,6 @@
 package com.xlm.domain.service.annotation;
 
-import com.xlm.domain.service.rule.factory.DefaultLogicFactory;
+import com.xlm.domain.service.rule.filter.factory.DefaultLogicFactory;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

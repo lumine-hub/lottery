@@ -1,4 +1,4 @@
-package com.xlm.domain.model;
+package com.xlm.domain.model.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.util.Date;
 
 /**
  * @author xlm

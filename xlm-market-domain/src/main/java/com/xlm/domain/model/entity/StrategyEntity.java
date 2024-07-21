@@ -1,4 +1,4 @@
-package com.xlm.domain.model;
+package com.xlm.domain.model.entity;
 
 import com.xlm.types.common.Constants;
 import lombok.AllArgsConstructor;
@@ -6,8 +6,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
-
-import java.util.Date;
 
 /**
  * @author xlm

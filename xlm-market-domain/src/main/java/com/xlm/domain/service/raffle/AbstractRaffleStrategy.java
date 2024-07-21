@@ -1,6 +1,6 @@
 package com.xlm.domain.service.raffle;
 
-import com.xlm.domain.model.StrategyEntity;
+import com.xlm.domain.model.entity.StrategyEntity;
 import com.xlm.domain.model.entity.RaffleAwardEntity;
 import com.xlm.domain.model.entity.RaffleFactorEntity;
 import com.xlm.domain.model.entity.RuleActionEntity;
@@ -9,14 +9,11 @@ import com.xlm.domain.model.vo.StrategyAwardRuleModelVO;
 import com.xlm.domain.repository.IStrategyRepository;
 import com.xlm.domain.service.IRaffleStrategy;
 import com.xlm.domain.service.armory.IStrategyDispatch;
-import com.xlm.domain.service.rule.factory.DefaultLogicFactory;
-import com.xlm.domain.service.rule.impl.RuleLockLogicFilter;
+import com.xlm.domain.service.rule.filter.factory.DefaultLogicFactory;
 import com.xlm.types.enums.ResponseCode;
 import com.xlm.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-
-import java.util.List;
 
 /**
  * @author xlm

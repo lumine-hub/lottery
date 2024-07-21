@@ -1,8 +1,8 @@
 package com.xlm.domain.repository;
 
-import com.xlm.domain.model.StrategyAwardEntity;
-import com.xlm.domain.model.StrategyEntity;
-import com.xlm.domain.model.StrategyRuleEntity;
+import com.xlm.domain.model.entity.StrategyAwardEntity;
+import com.xlm.domain.model.entity.StrategyEntity;
+import com.xlm.domain.model.entity.StrategyRuleEntity;
 import com.xlm.domain.model.vo.StrategyAwardRuleModelVO;
 
 import java.util.List;

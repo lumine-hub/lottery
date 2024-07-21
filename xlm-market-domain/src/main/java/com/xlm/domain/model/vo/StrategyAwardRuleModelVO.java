@@ -1,6 +1,6 @@
 package com.xlm.domain.model.vo;
 
-import com.xlm.domain.service.rule.factory.DefaultLogicFactory;
+import com.xlm.domain.service.rule.filter.factory.DefaultLogicFactory;
 import com.xlm.types.common.Constants;
 import lombok.Builder;
 import lombok.Data;

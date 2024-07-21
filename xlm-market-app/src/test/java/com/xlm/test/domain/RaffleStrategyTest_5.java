@@ -4,7 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.xlm.domain.model.entity.RaffleAwardEntity;
 import com.xlm.domain.model.entity.RaffleFactorEntity;
 import com.xlm.domain.service.IRaffleStrategy;
-import com.xlm.domain.service.rule.impl.RuleWeightLogicFilter;
+import com.xlm.domain.service.rule.filter.impl.RuleWeightLogicFilter;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
 import org.junit.Test;

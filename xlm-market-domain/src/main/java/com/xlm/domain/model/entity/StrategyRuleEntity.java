@@ -1,4 +1,4 @@
-package com.xlm.domain.model;
+package com.xlm.domain.model.entity;
 
 import com.xlm.types.common.Constants;
 import lombok.AllArgsConstructor;

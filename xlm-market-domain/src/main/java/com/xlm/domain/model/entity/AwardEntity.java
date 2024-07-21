@@ -1,4 +1,4 @@
-package com.xlm.domain.model;
+package com.xlm.domain.model.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -7,17 +7,17 @@ import lombok.NoArgsConstructor;
 
 /**
  * @author xlm
- * 2024/7/18 下午1:08
+ * 2024/7/18 下午1:07
  */
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class StrategyConditionEntity {
+public class AwardEntity {
 
     /** 用户ID */
     private String userId;
-    /** 策略ID */
-    private Integer strategyId;
+    /** 奖品ID */
+    private Integer awardId;
 
 }

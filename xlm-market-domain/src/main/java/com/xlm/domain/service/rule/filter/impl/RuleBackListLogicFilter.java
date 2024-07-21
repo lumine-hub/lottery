@@ -1,12 +1,12 @@
-package com.xlm.domain.service.rule.impl;
+package com.xlm.domain.service.rule.filter.impl;
 
 import com.xlm.domain.model.entity.RuleActionEntity;
 import com.xlm.domain.model.entity.RuleMatterEntity;
 import com.xlm.domain.model.vo.RuleLogicCheckTypeVO;
 import com.xlm.domain.repository.IStrategyRepository;
 import com.xlm.domain.service.annotation.LogicStrategy;
-import com.xlm.domain.service.rule.ILogicFilter;
-import com.xlm.domain.service.rule.factory.DefaultLogicFactory;
+import com.xlm.domain.service.rule.filter.ILogicFilter;
+import com.xlm.domain.service.rule.filter.factory.DefaultLogicFactory;
 import com.xlm.types.common.Constants;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
