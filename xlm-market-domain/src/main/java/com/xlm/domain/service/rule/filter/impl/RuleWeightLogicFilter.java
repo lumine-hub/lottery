@@ -17,7 +17,7 @@ import java.util.*;
 /**
  * @author xlm
  * 2024/7/19 下午6:37
- * 【抽奖前规则】根据抽奖权重返回可抽奖范围KEY
+ * 【抽奖前规则】根据抽奖权重返回可抽奖范围KEY 【已废弃】
  */
 @Slf4j
 @Component

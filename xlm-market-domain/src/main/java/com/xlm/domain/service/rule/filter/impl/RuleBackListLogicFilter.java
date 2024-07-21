@@ -16,7 +16,7 @@ import javax.annotation.Resource;
 /**
  * @author xlm
  * 2024/7/19 下午5:58
- * 【抽奖前规则】黑名单用户过滤规则
+ * 【抽奖前规则】黑名单用户过滤规则 【已废弃】
  */
 @Slf4j
 @Component

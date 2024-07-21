@@ -1,250 +1,311 @@
-24-07-18.13:44:20.223 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 12322 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-18.13:44:20.223 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
-24-07-18.13:44:20.754 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-18.13:44:20.756 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-18.13:44:20.776 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-24-07-18.13:44:21.309 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-18.13:44:21.339 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-18.13:44:21.465 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.13:44:21.478 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.13:44:22.751 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-18.13:44:22.792 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.853 seconds (JVM running for 3.441)
-24-07-18.13:44:23.077 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-18.13:44:23.333 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-18.13:44:23.616 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：true
-24-07-18.13:44:23.629 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：102 - 奖品ID值
-24-07-18.13:44:23.638 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-18.13:44:23.644 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-18.13:47:14.286 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 12550 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-18.13:47:14.286 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
-24-07-18.13:47:14.850 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-18.13:47:14.854 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-18.13:47:14.871 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
-24-07-18.13:47:15.462 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-18.13:47:15.498 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-18.13:47:15.630 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.13:47:15.644 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.13:47:17.025 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-18.13:47:17.072 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 3.058 seconds (JVM running for 4.147)
-24-07-18.13:49:02.037 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 12705 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-18.13:49:02.038 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
-24-07-18.13:49:02.552 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-18.13:49:02.553 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-18.13:49:02.569 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-24-07-18.13:49:03.159 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-18.13:49:03.191 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-18.13:49:03.321 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.13:49:03.330 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.13:49:04.676 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-18.13:49:04.727 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.97 seconds (JVM running for 3.696)
-24-07-18.13:49:27.549 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 12746 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-18.13:49:27.550 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
-24-07-18.13:49:28.048 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-18.13:49:28.050 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-18.13:49:28.067 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
-24-07-18.13:49:28.611 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-18.13:49:28.641 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-18.13:49:28.762 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.13:49:28.771 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.13:49:30.031 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-18.13:49:30.077 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.798 seconds (JVM running for 3.491)
-24-07-18.13:51:46.091 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 12928 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-18.13:51:46.092 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
-24-07-18.13:51:46.651 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-18.13:51:46.654 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-18.13:51:46.677 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
-24-07-18.13:51:47.282 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-18.13:51:47.313 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-18.13:51:47.443 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.13:51:47.451 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.13:51:48.770 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-18.13:51:48.815 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 3.001 seconds (JVM running for 3.757)
-24-07-18.13:53:59.040 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 13120 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-18.13:53:59.040 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
-24-07-18.13:53:59.550 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-18.13:53:59.552 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-18.13:53:59.566 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-24-07-18.13:54:00.108 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-18.13:54:00.142 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-18.13:54:00.269 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.13:54:00.279 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.13:54:01.642 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-18.13:54:01.696 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.939 seconds (JVM running for 3.664)
-24-07-18.13:54:28.757 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 13162 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-18.13:54:28.757 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
-24-07-18.13:54:29.293 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-18.13:54:29.295 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-18.13:54:29.310 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-24-07-18.13:54:29.920 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-18.13:54:29.954 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-18.13:54:30.088 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.13:54:30.097 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.13:54:31.376 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-18.13:54:31.415 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.926 seconds (JVM running for 3.659)
-24-07-18.13:55:14.566 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 13280 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-18.13:55:14.566 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
-24-07-18.13:55:15.065 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-18.13:55:15.067 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-18.13:55:15.083 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-24-07-18.13:55:15.629 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-18.13:55:15.660 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-18.13:55:15.788 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.13:55:15.798 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.13:55:17.012 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-18.13:55:17.056 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.712 seconds (JVM running for 3.194)
-24-07-18.14:05:49.550 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 14120 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-18.14:05:49.550 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
-24-07-18.14:05:50.084 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-18.14:05:50.086 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-18.14:05:50.101 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-24-07-18.14:05:50.676 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-18.14:05:50.712 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-18.14:05:50.855 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.14:05:50.866 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.14:05:52.217 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-18.14:05:52.265 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 3.008 seconds (JVM running for 3.841)
-24-07-18.14:07:50.950 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 14289 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-18.14:07:50.950 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
-24-07-18.14:07:51.485 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-18.14:07:51.487 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-18.14:07:51.502 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-24-07-18.14:07:52.044 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-18.14:07:52.075 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-18.14:07:52.199 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.14:07:52.208 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.14:07:53.498 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-18.14:07:53.541 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.853 seconds (JVM running for 3.582)
-24-07-18.14:08:02.685 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-18.14:08:04.190 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-18.14:08:15.555 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-18.14:08:15.571 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-18.14:08:17.509 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 14334 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-18.14:08:17.510 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
-24-07-18.14:08:18.024 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-18.14:08:18.026 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-18.14:08:18.043 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
-24-07-18.14:08:18.581 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-18.14:08:18.611 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-18.14:08:18.734 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.14:08:18.744 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.14:08:20.173 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-18.14:08:20.217 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.963 seconds (JVM running for 3.838)
-24-07-18.14:09:54.425 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-18.14:09:55.901 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-18.14:10:59.682 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m3s675ms).
-24-07-18.14:10:59.757 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：true
-24-07-18.14:11:23.529 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：103 - 奖品ID值
-24-07-18.14:11:23.554 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-18.14:11:25.804 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-18.14:12:02.455 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 14618 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-18.14:12:02.456 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
-24-07-18.14:12:03.024 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-18.14:12:03.026 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-18.14:12:03.052 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-24-07-18.14:12:03.602 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-18.14:12:03.633 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-18.14:12:03.758 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.14:12:03.767 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.14:12:04.994 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-18.14:12:05.039 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.903 seconds (JVM running for 3.637)
-24-07-18.14:12:09.175 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-18.14:12:09.396 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-18.14:12:09.450 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：true
-24-07-18.14:12:27.324 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s927ms).
-24-07-18.14:13:14.741 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：105 - 奖品ID值
-24-07-18.14:13:14.769 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-18.14:13:14.782 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-18.14:14:13.579 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 14801 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-18.14:14:13.580 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
-24-07-18.14:14:14.097 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-18.14:14:14.098 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-18.14:14:14.119 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
-24-07-18.14:14:14.658 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-18.14:14:14.691 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-18.14:14:14.818 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.14:14:14.828 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.14:14:16.141 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-18.14:14:16.188 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.879 seconds (JVM running for 3.582)
-24-07-18.14:14:16.609 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-18.14:14:16.832 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-18.14:14:16.894 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：true
-24-07-18.14:15:16.789 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56s283ms).
-24-07-18.14:15:16.791 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：101 - 奖品ID值
-24-07-18.14:15:16.832 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-18.14:15:16.842 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-18.14:15:19.793 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 14898 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-18.14:15:19.794 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
-24-07-18.14:15:20.388 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-18.14:15:20.390 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-18.14:15:20.418 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
-24-07-18.14:15:20.970 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-18.14:15:21.000 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-18.14:15:21.126 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.14:15:21.135 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.14:15:22.527 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-18.14:15:22.574 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 3.071 seconds (JVM running for 3.771)
-24-07-18.14:15:23.005 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-18.14:15:23.247 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-18.14:15:23.301 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：true
-24-07-18.14:15:33.954 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：104 - 奖品ID值
-24-07-18.14:15:40.897 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-18.14:15:40.912 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-18.14:15:49.820 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 14939 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-18.14:15:49.820 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
-24-07-18.14:15:50.339 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-18.14:15:50.340 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-18.14:15:50.356 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-24-07-18.14:15:50.895 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-18.14:15:50.927 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-18.14:15:51.039 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.14:15:51.047 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.14:15:52.210 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-18.14:15:52.248 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.718 seconds (JVM running for 3.218)
-24-07-18.14:15:52.617 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-18.14:15:52.856 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-18.14:15:52.905 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：true
-24-07-18.14:15:52.907 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：0 - 4000 策略配置
-24-07-18.14:15:52.907 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：0 - 5000 策略配置
-24-07-18.14:15:52.907 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：0 - 6000 策略配置
-24-07-18.14:15:52.918 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-18.14:15:52.920 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-18.14:20:45.234 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 1.8.0_412 on lumine.local with PID 15335 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-18.14:20:45.234 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
-24-07-18.14:20:45.733 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-18.14:20:45.735 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-18.14:20:45.749 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-24-07-18.14:20:46.290 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-18.14:20:46.320 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-18.14:20:46.442 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.14:20:46.450 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-18.14:20:47.591 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-18.14:20:47.639 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.661 seconds (JVM running for 3.173)
-24-07-18.14:20:48.042 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-18.14:20:48.251 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-18.14:20:48.304 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：true
-24-07-18.14:20:48.307 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：103 - 4000 策略配置
-24-07-18.14:20:48.308 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：105 - 5000 策略配置
-24-07-18.14:20:48.310 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果：104 - 6000 策略配置
-24-07-18.14:20:48.320 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-18.14:20:48.322 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-19.19:19:52.281 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_412 on lumine.local with PID 96909 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
-24-07-19.19:19:52.282 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-24-07-19.19:19:52.818 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-19.19:19:52.820 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-19.19:19:52.840 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
-24-07-19.19:19:53.426 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-19.19:19:53.458 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-19.19:19:53.594 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-19.19:19:53.603 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-19.19:19:55.217 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-19.19:19:55.261 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 3.263 seconds (JVM running for 4.326)
-24-07-19.19:22:26.663 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:xuluming strategyId:100001 ruleModel:rule_blacklist
-24-07-19.19:22:26.826 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-19.19:22:28.388 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-19.19:23:36.199 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m7s705ms).
-24-07-19.19:23:36.875 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:xuluming strategyId:100001 ruleModel:rule_weight
-24-07-19.19:23:36.884 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: xuluming ruleModel: rule_weight code: 0001 info: 接管；后续的流程，受规则引擎执行结果影响
-24-07-19.19:23:37.044 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100001,"userId":"xuluming"}
-24-07-19.19:23:37.047 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":102}
-24-07-19.19:23:37.055 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-19.19:23:37.062 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-21.17:15:22.204 [main            ] INFO  RaffleStrategyTest_5   - Starting RaffleStrategyTest_5 using Java 1.8.0_412 on lumine.local with PID 14674 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-21.17:15:22.205 [main            ] INFO  RaffleStrategyTest_5   - The following 1 profile is active: "dev"
+24-07-21.17:15:22.923 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-21.17:15:22.926 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-21.17:15:22.963 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+24-07-21.17:15:23.772 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-21.17:15:23.812 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-21.17:15:23.999 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-21.17:15:24.018 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-21.17:15:25.989 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-21.17:15:26.060 [main            ] INFO  RaffleStrategyTest_5   - Started RaffleStrategyTest_5 in 4.2 seconds (JVM running for 5.171)
+24-07-21.17:15:47.550 [redisson-netty-2-2] ERROR CommandDecoder         - Unable to decode data. channel: [id: 0x2dac830b, L:/127.0.0.1:54846 - R:127.0.0.1/127.0.0.1:16379], reply: ReplayingDecoderByteBuf(ridx=86, widx=86), command: (GET), promise: java.util.concurrent.CompletableFuture@53369a6b[Not completed, 1 dependents], params: [big_market_strategy_key_100001]
+com.esotericsoftware.kryo.KryoException: Unable to find class: com.xlm.domain.model.StrategyEntity
+	at com.esotericsoftware.kryo.util.DefaultClassResolver.readName(DefaultClassResolver.java:182)
+	at com.esotericsoftware.kryo.util.DefaultClassResolver.readClass(DefaultClassResolver.java:151)
+	at com.esotericsoftware.kryo.Kryo.readClass(Kryo.java:758)
+	at com.esotericsoftware.kryo.Kryo.readClassAndObject(Kryo.java:869)
+	at org.redisson.codec.Kryo5Codec$4.decode(Kryo5Codec.java:144)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:394)
+	at org.redisson.client.handler.CommandDecoder.decodeCommand(CommandDecoder.java:205)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:144)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:120)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:366)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.ClassNotFoundException: com.xlm.domain.model.StrategyEntity
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at com.esotericsoftware.kryo.util.DefaultClassResolver.readName(DefaultClassResolver.java:176)
+	... 27 common frames omitted
+24-07-21.17:15:47.556 [redisson-netty-2-2] ERROR ErrorsLoggingHandler   - Exception occured. Channel: [id: 0x2dac830b, L:/127.0.0.1:54846 - R:127.0.0.1/127.0.0.1:16379]
+io.netty.handler.codec.DecoderException: com.esotericsoftware.kryo.KryoException: Unable to find class: com.xlm.domain.model.StrategyEntity
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:421)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: com.esotericsoftware.kryo.KryoException: Unable to find class: com.xlm.domain.model.StrategyEntity
+	at com.esotericsoftware.kryo.util.DefaultClassResolver.readName(DefaultClassResolver.java:182)
+	at com.esotericsoftware.kryo.util.DefaultClassResolver.readClass(DefaultClassResolver.java:151)
+	at com.esotericsoftware.kryo.Kryo.readClass(Kryo.java:758)
+	at com.esotericsoftware.kryo.Kryo.readClassAndObject(Kryo.java:869)
+	at org.redisson.codec.Kryo5Codec$4.decode(Kryo5Codec.java:144)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:394)
+	at org.redisson.client.handler.CommandDecoder.decodeCommand(CommandDecoder.java:205)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:144)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:120)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:366)
+	... 17 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.xlm.domain.model.StrategyEntity
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at com.esotericsoftware.kryo.util.DefaultClassResolver.readName(DefaultClassResolver.java:176)
+	... 27 common frames omitted
+24-07-21.17:17:35.941 [main            ] INFO  RaffleStrategyTest_5   - Starting RaffleStrategyTest_5 using Java 1.8.0_412 on lumine.local with PID 14865 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-21.17:17:35.942 [main            ] INFO  RaffleStrategyTest_5   - The following 1 profile is active: "dev"
+24-07-21.17:17:36.576 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-21.17:17:36.578 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-21.17:17:36.615 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+24-07-21.17:17:37.226 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-21.17:17:37.263 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-21.17:17:37.414 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-21.17:17:37.424 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-21.17:17:39.135 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-21.17:17:39.193 [main            ] INFO  RaffleStrategyTest_5   - Started RaffleStrategyTest_5 in 3.6 seconds (JVM running for 4.498)
+24-07-21.17:17:47.440 [redisson-netty-2-2] ERROR CommandDecoder         - Unable to decode data. channel: [id: 0xb72692fd, L:/127.0.0.1:55308 - R:127.0.0.1/127.0.0.1:16379], reply: ReplayingDecoderByteBuf(ridx=86, widx=86), command: (GET), promise: java.util.concurrent.CompletableFuture@7d49a9df[Not completed, 1 dependents], params: [big_market_strategy_key_100001]
+com.esotericsoftware.kryo.KryoException: Unable to find class: com.xlm.domain.model.StrategyEntity
+	at com.esotericsoftware.kryo.util.DefaultClassResolver.readName(DefaultClassResolver.java:182)
+	at com.esotericsoftware.kryo.util.DefaultClassResolver.readClass(DefaultClassResolver.java:151)
+	at com.esotericsoftware.kryo.Kryo.readClass(Kryo.java:758)
+	at com.esotericsoftware.kryo.Kryo.readClassAndObject(Kryo.java:869)
+	at org.redisson.codec.Kryo5Codec$4.decode(Kryo5Codec.java:144)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:394)
+	at org.redisson.client.handler.CommandDecoder.decodeCommand(CommandDecoder.java:205)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:144)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:120)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:366)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.ClassNotFoundException: com.xlm.domain.model.StrategyEntity
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at com.esotericsoftware.kryo.util.DefaultClassResolver.readName(DefaultClassResolver.java:176)
+	... 27 common frames omitted
+24-07-21.17:19:17.383 [redisson-netty-2-2] ERROR ErrorsLoggingHandler   - Exception occured. Channel: [id: 0xb72692fd, L:/127.0.0.1:55308 - R:127.0.0.1/127.0.0.1:16379]
+io.netty.handler.codec.DecoderException: com.esotericsoftware.kryo.KryoException: Unable to find class: com.xlm.domain.model.StrategyEntity
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:421)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: com.esotericsoftware.kryo.KryoException: Unable to find class: com.xlm.domain.model.StrategyEntity
+	at com.esotericsoftware.kryo.util.DefaultClassResolver.readName(DefaultClassResolver.java:182)
+	at com.esotericsoftware.kryo.util.DefaultClassResolver.readClass(DefaultClassResolver.java:151)
+	at com.esotericsoftware.kryo.Kryo.readClass(Kryo.java:758)
+	at com.esotericsoftware.kryo.Kryo.readClassAndObject(Kryo.java:869)
+	at org.redisson.codec.Kryo5Codec$4.decode(Kryo5Codec.java:144)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:394)
+	at org.redisson.client.handler.CommandDecoder.decodeCommand(CommandDecoder.java:205)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:144)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:120)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:366)
+	... 17 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.xlm.domain.model.StrategyEntity
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at com.esotericsoftware.kryo.util.DefaultClassResolver.readName(DefaultClassResolver.java:176)
+	... 27 common frames omitted
+24-07-21.17:19:19.926 [main            ] INFO  RaffleStrategyTest_5   - Starting RaffleStrategyTest_5 using Java 1.8.0_412 on lumine.local with PID 15196 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-21.17:19:19.926 [main            ] INFO  RaffleStrategyTest_5   - The following 1 profile is active: "dev"
+24-07-21.17:19:20.588 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-21.17:19:20.591 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-21.17:19:20.620 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+24-07-21.17:19:21.250 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-21.17:19:21.286 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-21.17:19:21.423 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-21.17:19:21.440 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-21.17:19:23.090 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-21.17:19:23.163 [main            ] INFO  RaffleStrategyTest_5   - Started RaffleStrategyTest_5 in 3.577 seconds (JVM running for 4.58)
+24-07-21.17:19:27.846 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-21.17:19:28.127 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-21.17:19:41.391 [main            ] INFO  RuleWeightLogicChain   - RuleWeightLogicChain start strategyId:100001,userId:xuluming
+24-07-21.17:19:41.418 [main            ] INFO  BackListLogicChain     - 抽奖责任链-黑名单开始 userId: xuluming strategyId: 100001 ruleModel: rule_blacklist
+24-07-21.17:19:41.454 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-21.17:19:41.462 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-21.17:20:00.227 [main            ] INFO  RaffleStrategyTest_5   - Starting RaffleStrategyTest_5 using Java 1.8.0_412 on lumine.local with PID 15253 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-21.17:20:00.229 [main            ] INFO  RaffleStrategyTest_5   - The following 1 profile is active: "dev"
+24-07-21.17:20:00.870 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-21.17:20:00.872 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-21.17:20:00.913 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+24-07-21.17:20:01.533 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-21.17:20:01.565 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-21.17:20:01.707 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-21.17:20:01.717 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-21.17:20:03.538 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-21.17:20:03.589 [main            ] INFO  RaffleStrategyTest_5   - Started RaffleStrategyTest_5 in 3.669 seconds (JVM running for 4.571)
+24-07-21.17:20:35.528 [main            ] INFO  RuleWeightLogicChain   - RuleWeightLogicChain start strategyId:100001,userId:xuluming
+24-07-21.17:20:35.553 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-21.17:20:35.829 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-21.17:20:35.857 [main            ] INFO  BackListLogicChain     - 抽奖责任链-黑名单开始 userId: xuluming strategyId: 100001 ruleModel: rule_blacklist
+24-07-21.17:20:35.897 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-21.17:20:35.903 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-21.17:21:02.185 [main            ] INFO  RaffleStrategyTest_5   - Starting RaffleStrategyTest_5 using Java 1.8.0_412 on lumine.local with PID 15341 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-21.17:21:02.186 [main            ] INFO  RaffleStrategyTest_5   - The following 1 profile is active: "dev"
+24-07-21.17:21:02.902 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-21.17:21:02.904 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-21.17:21:02.946 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+24-07-21.17:21:03.601 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-21.17:21:03.639 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-21.17:21:03.809 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-21.17:21:03.828 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-21.17:21:05.535 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-21.17:21:05.620 [main            ] INFO  RaffleStrategyTest_5   - Started RaffleStrategyTest_5 in 3.776 seconds (JVM running for 4.707)
+24-07-21.17:21:06.084 [main            ] INFO  RuleWeightLogicChain   - RuleWeightLogicChain start strategyId:100001,userId:xuluming
+24-07-21.17:21:06.111 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-21.17:21:06.395 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-21.17:21:06.433 [main            ] INFO  BackListLogicChain     - 抽奖责任链-黑名单开始 userId: xuluming strategyId: 100001 ruleModel: rule_blacklist
+24-07-21.17:21:22.229 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s833ms).
+24-07-21.17:21:34.824 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-21.17:21:34.855 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-21.17:22:06.301 [main            ] INFO  RaffleStrategyTest_5   - Starting RaffleStrategyTest_5 using Java 1.8.0_412 on lumine.local with PID 15430 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-21.17:22:06.302 [main            ] INFO  RaffleStrategyTest_5   - The following 1 profile is active: "dev"
+24-07-21.17:22:06.969 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-21.17:22:06.977 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-21.17:22:07.003 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+24-07-21.17:22:07.591 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-21.17:22:07.632 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-21.17:22:07.769 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-21.17:22:07.779 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-21.17:22:09.572 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-21.17:22:09.632 [main            ] INFO  RaffleStrategyTest_5   - Started RaffleStrategyTest_5 in 3.693 seconds (JVM running for 4.583)
+24-07-21.17:22:16.267 [main            ] INFO  RuleWeightLogicChain   - RuleWeightLogicChain start strategyId:100001,userId:xuluming
+24-07-21.17:22:41.933 [main            ] INFO  RaffleStrategyTest_7   - Starting RaffleStrategyTest_7 using Java 1.8.0_412 on lumine.local with PID 15476 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-21.17:22:41.933 [main            ] INFO  RaffleStrategyTest_7   - The following 1 profile is active: "dev"
+24-07-21.17:22:42.661 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-21.17:22:42.665 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-21.17:22:42.715 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+24-07-21.17:22:43.313 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-21.17:22:43.348 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-21.17:22:43.501 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-21.17:22:43.512 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-21.17:22:45.185 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-21.17:22:45.248 [main            ] INFO  RaffleStrategyTest_7   - Started RaffleStrategyTest_7 in 3.628 seconds (JVM running for 4.489)
+24-07-21.17:22:45.686 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-21.17:22:46.124 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-21.17:22:46.422 [main            ] INFO  RaffleStrategyTest_7   - 测试结果：true
+24-07-21.17:22:46.448 [main            ] INFO  RaffleStrategyTest_7   - 测试结果：true
+24-07-21.17:22:46.463 [main            ] INFO  RaffleStrategyTest_7   - 测试结果：true
+24-07-21.17:23:26.357 [main            ] INFO  DefaultLogicChain      - 【默认抽奖规则】userId:user001,strategyId:100003,awardId:107
+24-07-21.17:23:26.358 [main            ] INFO  RaffleStrategyTest_7   - 测试结果：107
+24-07-21.17:23:26.378 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-21.17:23:26.390 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-21.17:23:43.023 [main            ] INFO  RaffleStrategyTest_7   - Starting RaffleStrategyTest_7 using Java 1.8.0_412 on lumine.local with PID 15559 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-21.17:23:43.024 [main            ] INFO  RaffleStrategyTest_7   - The following 1 profile is active: "dev"
+24-07-21.17:23:43.653 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-21.17:23:43.655 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-21.17:23:43.690 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+24-07-21.17:23:44.286 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-21.17:23:44.318 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-21.17:23:44.456 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-21.17:23:44.465 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-21.17:23:45.906 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-21.17:23:45.951 [main            ] INFO  RaffleStrategyTest_7   - Started RaffleStrategyTest_7 in 3.251 seconds (JVM running for 3.961)
+24-07-21.17:23:46.485 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-21.17:23:46.739 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-21.17:23:46.802 [main            ] INFO  RaffleStrategyTest_7   - 测试结果：true
+24-07-21.17:23:46.808 [main            ] INFO  RaffleStrategyTest_7   - 测试结果：true
+24-07-21.17:23:46.814 [main            ] INFO  RaffleStrategyTest_7   - 测试结果：true
+24-07-21.17:23:46.819 [main            ] INFO  RuleWeightLogicChain   - RuleWeightLogicChain start strategyId:100001,userId:xiaofuge
+24-07-21.17:23:46.838 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: xiaofuge strategyId: 100001 ruleModel: rule_weight awardId: 103
+24-07-21.17:23:46.838 [main            ] INFO  RaffleStrategyTest_7   - 测试结果：103
+24-07-21.17:23:46.851 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-21.17:23:46.867 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-21.17:24:26.618 [main            ] INFO  RaffleStrategyTest_7   - Starting RaffleStrategyTest_7 using Java 1.8.0_412 on lumine.local with PID 15620 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-21.17:24:26.619 [main            ] INFO  RaffleStrategyTest_7   - The following 1 profile is active: "dev"
+24-07-21.17:24:27.226 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-21.17:24:27.228 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-21.17:24:27.255 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+24-07-21.17:24:27.862 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-21.17:24:27.893 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-21.17:24:28.028 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-21.17:24:28.038 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-21.17:24:29.569 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-21.17:24:29.625 [main            ] INFO  RaffleStrategyTest_7   - Started RaffleStrategyTest_7 in 3.29 seconds (JVM running for 3.936)
+24-07-21.17:24:30.124 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-21.17:24:30.374 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-21.17:24:30.440 [main            ] INFO  RaffleStrategyTest_7   - 测试结果：true
+24-07-21.17:24:30.446 [main            ] INFO  RaffleStrategyTest_7   - 测试结果：true
+24-07-21.17:24:30.452 [main            ] INFO  RaffleStrategyTest_7   - 测试结果：true
+24-07-21.17:24:30.455 [main            ] INFO  RuleWeightLogicChain   - RuleWeightLogicChain start strategyId:100001,userId:user001
+24-07-21.17:24:30.473 [main            ] INFO  BackListLogicChain     - 抽奖责任链-黑名单开始 userId: user001 strategyId: 100001 ruleModel: rule_blacklist
+24-07-21.17:24:30.475 [main            ] INFO  BackListLogicChain     - 抽奖责任链-黑名单接管 userId: user001 strategyId: 100001 ruleModel: rule_blacklist awardId: 100
+24-07-21.17:24:30.475 [main            ] INFO  RaffleStrategyTest_7   - 测试结果：100
+24-07-21.17:24:30.492 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-21.17:24:30.508 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

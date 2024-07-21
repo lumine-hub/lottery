@@ -1,19 +1,20 @@
-package com.xlm.domain.service.raffle;
+package com.xlm.domain.service;
 
-import com.xlm.domain.model.entity.StrategyEntity;
 import com.xlm.domain.model.entity.RaffleAwardEntity;
 import com.xlm.domain.model.entity.RaffleFactorEntity;
 import com.xlm.domain.model.entity.RuleActionEntity;
 import com.xlm.domain.model.vo.RuleLogicCheckTypeVO;
 import com.xlm.domain.model.vo.StrategyAwardRuleModelVO;
 import com.xlm.domain.repository.IStrategyRepository;
-import com.xlm.domain.service.IRaffleStrategy;
 import com.xlm.domain.service.armory.IStrategyDispatch;
-import com.xlm.domain.service.rule.filter.factory.DefaultLogicFactory;
+import com.xlm.domain.service.rule.chain.ILogicChain;
+import com.xlm.domain.service.rule.chain.factory.DefaultChainFactory;
 import com.xlm.types.enums.ResponseCode;
 import com.xlm.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+
+import javax.annotation.Resource;
 
 /**
  * @author xlm
@@ -22,6 +23,9 @@ import org.apache.commons.lang3.StringUtils;
  */
 @Slf4j
 public abstract class AbstractRaffleStrategy implements IRaffleStrategy {
+
+    @Resource
+    private DefaultChainFactory chainFactory;
 
     // 策略仓储服务 -> domain层像一个大厨，仓储层提供米面粮油
     protected IStrategyRepository repository;
@@ -42,38 +46,16 @@ public abstract class AbstractRaffleStrategy implements IRaffleStrategy {
             throw new AppException(ResponseCode.ILLEGAL_PARAMETER.getCode(), ResponseCode.ILLEGAL_PARAMETER.getInfo());
         }
 
-        // 2. 策略查询
-        StrategyEntity strategy = repository.queryStrategyEntityByStrategyId(strategyId);
+        // 2. 获取抽奖id
+        ILogicChain logicChain = chainFactory.openLogicChain(strategyId);
+        Integer awardId = logicChain.logic(userId, strategyId);
 
-        // 3. 抽奖前 - 规则过滤 策略100001有rule_weight和rule_blacklist的规则，需过滤
-        RuleActionEntity<RuleActionEntity.RaffleBeforeEntity> ruleActionEntity =
-                this.doCheckRaffleBeforeLogic(raffleFactorEntity, strategy.ruleModels());
 
-        if (RuleLogicCheckTypeVO.TAKE_OVER.getCode().equals(ruleActionEntity.getCode())) {
-            if (DefaultLogicFactory.LogicModel.RULE_BLACKLIST.getCode().equals(ruleActionEntity.getRuleModel())) {
-                // 黑名单返回固定的奖品ID
-                return RaffleAwardEntity.builder()
-                        .awardId(ruleActionEntity.getData().getAwardId())
-                        .build();
-            } else if (DefaultLogicFactory.LogicModel.RULE_WIGHT.getCode().equals(ruleActionEntity.getRuleModel())) {
-                // 权重根据返回的信息进行抽奖
-                RuleActionEntity.RaffleBeforeEntity raffleBeforeEntity = ruleActionEntity.getData();
-                String ruleWeightValueKey = raffleBeforeEntity.getRuleWeightValueKey();
-                Integer awardId = strategyDispatch.getRandomAwardId(strategyId, ruleWeightValueKey);
-                return RaffleAwardEntity.builder()
-                        .awardId(awardId)
-                        .build();
-            }
-        }
-
-        // 4. 默认抽奖流程
-        Integer awardId = strategyDispatch.getRandomAwardId(strategyId);
-
-        // 5. 查询奖品规则「抽奖中（拿到奖品ID时，过滤规则）、抽奖后（扣减完奖品库存后过滤，抽奖中拦截和无库存则走兜底）」
+        // 3. 查询奖品规则「抽奖中（拿到奖品ID时，过滤规则）、抽奖后（扣减完奖品库存后过滤，抽奖中拦截和无库存则走兜底）」
         StrategyAwardRuleModelVO ruleModel = repository.queryStrategyAwardRuleModelVO(strategyId, awardId);
 
 
-        // 6. 抽奖中 - 规则过滤
+        // 4. 抽奖中 - 规则过滤
         RuleActionEntity<RuleActionEntity.RaffleCenterEntity> ruleActionCenterEntity = this.doCheckRaffleCenterLogic(RaffleFactorEntity.builder()
                 .strategyId(strategyId)
                 .awardId(awardId)

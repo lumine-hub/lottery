@@ -5,6 +5,7 @@ import com.xlm.domain.model.entity.RuleActionEntity;
 import com.xlm.domain.model.entity.RuleMatterEntity;
 import com.xlm.domain.model.vo.RuleLogicCheckTypeVO;
 import com.xlm.domain.repository.IStrategyRepository;
+import com.xlm.domain.service.AbstractRaffleStrategy;
 import com.xlm.domain.service.armory.IStrategyDispatch;
 import com.xlm.domain.service.rule.filter.ILogicFilter;
 import com.xlm.domain.service.rule.filter.factory.DefaultLogicFactory;

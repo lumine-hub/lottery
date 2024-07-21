@@ -15,7 +15,7 @@ import javax.annotation.Resource;
 /**
  * @author xlm
  * 2024/7/20 下午1:59
- * 抽奖中的一种过滤规则：用户抽奖n次后，对应奖品可解锁抽奖
+ * 【抽奖中的一种过滤规则】：用户抽奖n次后，对应奖品可解锁抽奖
  */
 @Slf4j
 @Component
