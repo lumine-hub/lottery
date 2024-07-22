@@ -1,5 +1,7 @@
 package com.xlm.domain.service.rule.chain;
 
+import com.xlm.domain.service.rule.chain.factory.DefaultChainFactory;
+
 /**
  * @author xlm
  * 2024/7/21 下午3:23
@@ -12,7 +14,7 @@ public interface ILogicChain extends ILogicChainArmory {
      *
      * @param strategyId
      * @param userId
-     * @return 奖品id awardId
+     * @return 奖品对象
      */
-    Integer logic(String userId,Long strategyId);
+    DefaultChainFactory.StrategyAwardVO logic(String userId, Long strategyId);
 }

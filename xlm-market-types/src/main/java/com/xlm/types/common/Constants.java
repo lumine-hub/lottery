@@ -21,6 +21,9 @@ public class Constants {
         // 存放每一种策略的抽奖范围，key为strategyId或者strategyId_4000， value是一个整数。
         // 比如，key是100001，value是250，那么之后别人获取随机数就是1-250
         public static String STRATEGY_RATE_RANGE_KEY = "big_market_strategy_rate_range_key_";
+
+        // 存放的是运用于规则中抽奖的tree模型
+        public static String RULE_TREE_VO_KEY = "rule_tree_vo_key_";
     }
 
 }

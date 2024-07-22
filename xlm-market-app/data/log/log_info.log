@@ -473,7 +473,7 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.lang.Thread.run(Thread.java:750)
-24-07-22.17:49:50.056 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@75db5df9] to prepare test instance [com.xlm.test.domain.RaffleStrategyTest_7@6436e181]
+24-07-22.17:49:50.056 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@75db5df9] to prepare test instance [com.xlm.test.domain.LogicChainTest_7@6436e181]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
@@ -698,3 +698,351 @@ Caused by: java.net.ConnectException: Connection refused
 24-07-22.18:50:52.734 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】treeId:100000001 node:rule_stock code:0001
 24-07-22.18:51:12.322 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】treeId:100000001 node:rule_luck_award code:0001
 24-07-22.18:51:25.103 [main            ] INFO  LogicTreeTest_8        - 测试结果：{"awardId":101,"awardRuleValue":"1,100"}
+24-07-22.19:46:48.715 [main            ] INFO  StrategyRepositoryTest - Starting StrategyRepositoryTest using Java 1.8.0_412 on lumine.local with PID 15249 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-22.19:46:48.716 [main            ] INFO  StrategyRepositoryTest - The following 1 profile is active: "dev"
+24-07-22.19:46:49.285 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-22.19:46:49.287 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-22.19:46:49.305 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+24-07-22.19:46:49.863 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-22.19:46:49.895 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-22.19:46:50.016 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.19:46:50.024 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.19:46:51.362 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-22.19:46:51.404 [main            ] INFO  StrategyRepositoryTest - Started StrategyRepositoryTest in 2.957 seconds (JVM running for 3.561)
+24-07-22.19:46:51.663 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-22.19:46:51.920 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-22.19:46:51.995 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-22.19:46:51.999 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-22.19:47:29.906 [main            ] INFO  StrategyRepositoryTest - Starting StrategyRepositoryTest using Java 1.8.0_412 on lumine.local with PID 15323 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-22.19:47:29.907 [main            ] INFO  StrategyRepositoryTest - The following 1 profile is active: "dev"
+24-07-22.19:47:30.426 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-22.19:47:30.428 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-22.19:47:30.444 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+24-07-22.19:47:30.993 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-22.19:47:31.026 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-22.19:47:31.154 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.19:47:31.165 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.19:47:32.451 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-22.19:47:32.491 [main            ] INFO  StrategyRepositoryTest - Started StrategyRepositoryTest in 2.863 seconds (JVM running for 3.371)
+24-07-22.19:47:32.749 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-22.19:47:32.990 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-22.19:47:33.188 [main            ] INFO  StrategyRepositoryTest - 测试结果：{"treeDesc":"规则树","treeId":"tree_lock","treeName":"规则树","treeNodeMap":{"rule_lock":{"ruleDesc":"限定用户已完成N次抽奖后解锁","ruleKey":"rule_lock","ruleValue":"1","treeId":"tree_lock","treeNodeLineVOList":[{"ruleLimitType":"EQUAL","ruleLimitValue":"ALLOW","ruleNodeFrom":"rule_lock","ruleNodeTo":"rule_stock","treeId":"tree_lock"},{"ruleLimitType":"EQUAL","ruleLimitValue":"TAKE_OVER","ruleNodeFrom":"rule_lock","ruleNodeTo":"rule_luck_award","treeId":"tree_lock"}]},"rule_stock":{"ruleDesc":"库存扣减规则","ruleKey":"rule_stock","treeId":"tree_lock","treeNodeLineVOList":[{"ruleLimitType":"EQUAL","ruleLimitValue":"TAKE_OVER","ruleNodeFrom":"rule_stock","ruleNodeTo":"rule_luck_award","treeId":"tree_lock"}]},"rule_luck_award":{"ruleDesc":"兜底奖品随机积分","ruleKey":"rule_luck_award","ruleValue":"1,100","treeId":"tree_lock"}},"treeRootRuleNode":"rule_lock"}
+24-07-22.19:47:33.204 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-22.19:47:33.208 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-22.20:28:16.011 [main            ] INFO  RaffleStrategyTest_6_9 - Starting RaffleStrategyTest_6_9 using Java 1.8.0_412 on lumine.local with PID 18834 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-22.20:28:16.012 [main            ] INFO  RaffleStrategyTest_6_9 - The following 1 profile is active: "dev"
+24-07-22.20:28:16.553 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-22.20:28:16.555 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-22.20:28:16.573 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+24-07-22.20:28:17.151 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-22.20:28:17.184 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-22.20:28:17.307 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.20:28:17.315 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.20:28:18.517 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-22.20:28:18.556 [main            ] INFO  RaffleStrategyTest_6_9 - Started RaffleStrategyTest_6_9 in 2.822 seconds (JVM running for 3.351)
+24-07-22.20:28:18.938 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-22.20:28:19.156 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-22.20:28:19.219 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.20:28:19.235 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.20:28:19.239 [main            ] INFO  DefaultLogicChain      - 【默认抽奖规则】userId:xm,strategyId:100006,awardId:102
+24-07-22.20:28:19.240 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xm 100006 102 rule_default
+24-07-22.20:28:19.248 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+24-07-22.20:28:19.248 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+24-07-22.20:28:19.249 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_luck_award code:0001
+24-07-22.20:28:19.249 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xm 100006 101 1,100
+24-07-22.20:28:19.352 [main            ] INFO  RaffleStrategyTest_6_9 - 请求参数：{"strategyId":100006,"userId":"xm"}
+24-07-22.20:28:19.356 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：{"awardConfig":"1,100","awardId":101}
+24-07-22.20:28:19.370 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-22.20:28:19.382 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-22.20:35:28.932 [main            ] INFO  RaffleStrategyTest_6_9 - Starting RaffleStrategyTest_6_9 using Java 1.8.0_412 on lumine.local with PID 19405 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-22.20:35:28.932 [main            ] INFO  RaffleStrategyTest_6_9 - The following 1 profile is active: "dev"
+24-07-22.20:35:29.468 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-22.20:35:29.478 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-22.20:35:29.500 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+24-07-22.20:35:30.058 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-22.20:35:30.092 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-22.20:35:30.228 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.20:35:30.238 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.20:35:31.679 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-22.20:35:31.734 [main            ] INFO  RaffleStrategyTest_6_9 - Started RaffleStrategyTest_6_9 in 3.075 seconds (JVM running for 3.866)
+24-07-22.20:35:32.179 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-22.20:35:32.426 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-22.20:35:32.483 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.20:35:32.489 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.20:36:59.932 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m238ms).
+24-07-22.20:42:41.039 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m6s424ms).
+24-07-22.20:42:41.050 [main            ] INFO  DefaultLogicChain      - 【默认抽奖规则】userId:xm,strategyId:100006,awardId:102
+24-07-22.20:43:17.962 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xm 100006 102 rule_default
+24-07-22.20:44:18.655 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m695ms).
+24-07-22.20:44:32.936 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+24-07-22.20:44:32.944 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+24-07-22.20:44:32.952 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_luck_award code:0001
+24-07-22.20:44:41.525 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xm 100006 101 1,100
+24-07-22.20:44:53.877 [main            ] INFO  RaffleStrategyTest_6_9 - 请求参数：{"strategyId":100006,"userId":"xm"}
+24-07-22.20:44:56.025 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：{"awardConfig":"1,100","awardId":101}
+24-07-22.20:44:59.482 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-22.20:44:59.493 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-22.20:49:34.483 [main            ] INFO  RaffleStrategyTest_6_9 - Starting RaffleStrategyTest_6_9 using Java 1.8.0_412 on lumine.local with PID 20556 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-22.20:49:34.483 [main            ] INFO  RaffleStrategyTest_6_9 - The following 1 profile is active: "dev"
+24-07-22.20:49:35.033 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-22.20:49:35.035 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-22.20:49:35.061 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+24-07-22.20:49:35.663 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-22.20:49:35.696 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-22.20:49:35.830 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.20:49:35.838 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.20:49:37.231 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-22.20:49:37.276 [main            ] INFO  RaffleStrategyTest_6_9 - Started RaffleStrategyTest_6_9 in 3.073 seconds (JVM running for 3.809)
+24-07-22.20:49:37.722 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-22.20:49:38.012 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-22.20:49:38.094 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.20:49:38.102 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.20:50:06.686 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58s673ms).
+24-07-22.20:50:06.700 [main            ] INFO  DefaultLogicChain      - 【默认抽奖规则】userId:xlm,strategyId:100006,awardId:102
+24-07-22.20:50:06.703 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xlm 100006 102 rule_default
+24-07-22.20:50:06.729 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+24-07-22.20:50:06.730 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+24-07-22.20:50:06.731 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_luck_award code:0001
+24-07-22.20:50:06.731 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xlm 100006 101 1,100
+24-07-22.20:50:06.756 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-22.20:50:06.763 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-22.20:50:10.422 [main            ] INFO  RaffleStrategyTest_6_9 - Starting RaffleStrategyTest_6_9 using Java 1.8.0_412 on lumine.local with PID 20597 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-22.20:50:10.423 [main            ] INFO  RaffleStrategyTest_6_9 - The following 1 profile is active: "dev"
+24-07-22.20:50:11.075 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-22.20:50:11.077 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-22.20:50:11.094 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+24-07-22.20:50:11.654 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-22.20:50:11.686 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-22.20:50:11.840 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.20:50:11.852 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.20:50:13.164 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-22.20:50:13.208 [main            ] INFO  RaffleStrategyTest_6_9 - Started RaffleStrategyTest_6_9 in 3.066 seconds (JVM running for 3.776)
+24-07-22.20:50:13.684 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-22.20:50:13.925 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-22.20:50:13.980 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.20:50:13.986 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.20:50:39.440 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55s514ms).
+24-07-22.21:05:07.216 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m48s497ms).
+24-07-22.21:05:12.221 [main            ] INFO  RuleWeightLogicChain   - RuleWeightLogicChain start strategyId:100001,userId:user003
+24-07-22.21:07:53.375 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m50s603ms).
+24-07-22.21:08:45.602 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: user003 strategyId: 100001 ruleModel: rule_weight awardId: 102
+24-07-22.21:09:38.896 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m44s426ms).
+24-07-22.21:09:39.869 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 user003 100001 102 rule_weight
+24-07-22.21:09:44.776 [main            ] INFO  RaffleStrategyTest_6_9 - 请求参数：{"strategyId":100001,"userId":"user003"}
+24-07-22.21:09:44.779 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：{"awardId":102}
+24-07-22.21:09:44.792 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-22.21:09:44.799 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-22.21:09:55.088 [main            ] INFO  RaffleStrategyTest_6_9 - Starting RaffleStrategyTest_6_9 using Java 1.8.0_412 on lumine.local with PID 22162 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-22.21:09:55.090 [main            ] INFO  RaffleStrategyTest_6_9 - The following 1 profile is active: "dev"
+24-07-22.21:09:55.618 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-22.21:09:55.620 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-22.21:09:55.637 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+24-07-22.21:09:56.173 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-22.21:09:56.202 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-22.21:09:56.328 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.21:09:56.337 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.21:09:57.674 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-22.21:09:57.720 [main            ] INFO  RaffleStrategyTest_6_9 - Started RaffleStrategyTest_6_9 in 2.91 seconds (JVM running for 3.589)
+24-07-22.21:09:58.135 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-22.21:09:58.388 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-22.21:09:58.437 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.21:09:58.440 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.21:10:20.149 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51s230ms).
+24-07-22.21:10:23.030 [main            ] INFO  DefaultLogicChain      - 【默认抽奖规则】userId:xlm,strategyId:100003,awardId:107
+24-07-22.21:10:24.263 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xlm 100003 107 rule_default
+24-07-22.21:10:33.824 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-22.21:10:33.836 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-22.21:10:49.322 [main            ] INFO  RaffleStrategyTest_6_9 - Starting RaffleStrategyTest_6_9 using Java 1.8.0_412 on lumine.local with PID 22244 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-22.21:10:49.322 [main            ] INFO  RaffleStrategyTest_6_9 - The following 1 profile is active: "dev"
+24-07-22.21:10:49.853 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-22.21:10:49.855 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-22.21:10:49.882 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+24-07-22.21:10:50.479 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-22.21:10:50.511 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-22.21:10:50.638 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.21:10:50.650 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.21:10:52.068 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-22.21:10:52.114 [main            ] INFO  RaffleStrategyTest_6_9 - Started RaffleStrategyTest_6_9 in 3.07 seconds (JVM running for 3.759)
+24-07-22.21:10:52.534 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-22.21:10:52.780 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-22.21:10:52.833 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.21:10:52.839 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.21:11:01.120 [main            ] INFO  DefaultLogicChain      - 【默认抽奖规则】userId:xlm,strategyId:100003,awardId:109
+24-07-22.21:11:03.543 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xlm 100003 109 rule_default
+24-07-22.21:12:10.766 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m12s835ms).
+24-07-22.21:12:10.810 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-22.21:12:10.825 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-22.21:12:12.697 [main            ] INFO  RaffleStrategyTest_6_9 - Starting RaffleStrategyTest_6_9 using Java 1.8.0_412 on lumine.local with PID 22352 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-22.21:12:12.698 [main            ] INFO  RaffleStrategyTest_6_9 - The following 1 profile is active: "dev"
+24-07-22.21:12:13.214 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-22.21:12:13.217 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-22.21:12:13.234 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+24-07-22.21:12:13.778 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-22.21:12:13.808 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-22.21:12:13.933 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.21:12:13.942 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.21:12:15.205 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-22.21:12:15.251 [main            ] INFO  RaffleStrategyTest_6_9 - Started RaffleStrategyTest_6_9 in 2.817 seconds (JVM running for 3.508)
+24-07-22.21:12:15.661 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-22.21:12:15.879 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-22.21:12:15.928 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.21:12:15.933 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.21:12:19.700 [main            ] INFO  DefaultLogicChain      - 【默认抽奖规则】userId:xlm,strategyId:100003,awardId:107
+24-07-22.21:12:19.704 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xlm 100003 107 rule_default
+24-07-22.21:12:30.963 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-22.21:12:30.976 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-22.21:12:32.610 [main            ] INFO  RaffleStrategyTest_6_9 - Starting RaffleStrategyTest_6_9 using Java 1.8.0_412 on lumine.local with PID 22381 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-22.21:12:32.610 [main            ] INFO  RaffleStrategyTest_6_9 - The following 1 profile is active: "dev"
+24-07-22.21:12:33.122 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-22.21:12:33.124 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-22.21:12:33.147 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+24-07-22.21:12:33.677 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-22.21:12:33.710 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-22.21:12:33.845 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.21:12:33.857 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.21:12:35.296 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-22.21:12:35.339 [main            ] INFO  RaffleStrategyTest_6_9 - Started RaffleStrategyTest_6_9 in 2.99 seconds (JVM running for 3.684)
+24-07-22.21:12:35.761 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-22.21:12:35.983 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-22.21:12:36.038 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.21:12:36.044 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.21:19:04.801 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m58s817ms).
+24-07-22.21:19:06.038 [main            ] INFO  DefaultLogicChain      - 【默认抽奖规则】userId:xlm,strategyId:100003,awardId:107
+24-07-22.21:19:06.042 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xlm 100003 107 rule_default
+24-07-22.21:24:27.129 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m22s329ms).
+24-07-22.21:27:05.689 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m38s559ms).
+24-07-22.21:30:59.603 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m48s22ms).
+24-07-22.21:35:06.391 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m12s681ms).
+24-07-22.21:38:09.588 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m3s196ms).
+24-07-22.21:38:29.797 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-22.21:38:32.043 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-22.21:38:33.948 [main            ] INFO  RaffleStrategyTest_6_9 - Starting RaffleStrategyTest_6_9 using Java 1.8.0_412 on lumine.local with PID 24384 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-22.21:38:33.948 [main            ] INFO  RaffleStrategyTest_6_9 - The following 1 profile is active: "dev"
+24-07-22.21:38:34.463 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-22.21:38:34.465 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-22.21:38:34.489 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+24-07-22.21:38:35.024 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-22.21:38:35.057 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-22.21:38:35.184 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.21:38:35.194 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.21:38:36.537 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-22.21:38:36.582 [main            ] INFO  RaffleStrategyTest_6_9 - Started RaffleStrategyTest_6_9 in 2.918 seconds (JVM running for 3.629)
+24-07-22.21:38:36.973 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-22.21:38:37.204 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-22.21:38:37.255 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.21:38:37.260 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.21:38:54.336 [main            ] INFO  DefaultLogicChain      - 【默认抽奖规则】userId:xlm,strategyId:100003,awardId:107
+24-07-22.21:39:00.894 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xlm 100003 107 rule_default
+24-07-22.21:41:19.493 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m58s153ms).
+24-07-22.21:41:19.532 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-22.21:41:19.547 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-22.21:41:22.749 [main            ] INFO  RaffleStrategyTest_6_9 - Starting RaffleStrategyTest_6_9 using Java 1.8.0_412 on lumine.local with PID 24612 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-22.21:41:22.750 [main            ] INFO  RaffleStrategyTest_6_9 - The following 1 profile is active: "dev"
+24-07-22.21:41:23.340 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-22.21:41:23.342 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-22.21:41:23.367 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+24-07-22.21:41:23.920 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-22.21:41:23.950 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-22.21:41:24.077 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.21:41:24.085 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.21:41:25.413 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-22.21:41:25.461 [main            ] INFO  RaffleStrategyTest_6_9 - Started RaffleStrategyTest_6_9 in 3.003 seconds (JVM running for 3.838)
+24-07-22.21:41:25.898 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-22.21:41:26.124 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-22.21:41:26.176 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.21:41:26.182 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.21:41:27.955 [main            ] INFO  DefaultLogicChain      - 【默认抽奖规则】userId:xlm,strategyId:100003,awardId:107
+24-07-22.21:41:27.957 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xlm 100003 107 rule_default
+24-07-22.21:41:28.526 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-22.21:41:28.601 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-22.21:45:26.019 [main            ] INFO  RaffleStrategyTest_6_9 - Starting RaffleStrategyTest_6_9 using Java 1.8.0_412 on lumine.local with PID 24939 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-22.21:45:26.021 [main            ] INFO  RaffleStrategyTest_6_9 - The following 1 profile is active: "dev"
+24-07-22.21:45:26.580 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-22.21:45:26.582 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-22.21:45:26.605 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+24-07-22.21:45:27.149 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-22.21:45:27.182 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-22.21:45:27.314 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.21:45:27.323 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.21:45:28.736 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-22.21:45:28.782 [main            ] INFO  RaffleStrategyTest_6_9 - Started RaffleStrategyTest_6_9 in 3.029 seconds (JVM running for 3.828)
+24-07-22.21:45:29.220 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-22.21:45:29.451 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-22.21:45:29.510 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.21:45:29.516 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.21:45:34.741 [main            ] INFO  DefaultLogicChain      - 【默认抽奖规则】userId:xlm,strategyId:100003,awardId:107
+24-07-22.21:45:34.745 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xlm 100003 107 rule_default
+24-07-22.21:50:47.392 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m12s660ms).
+24-07-22.21:50:47.450 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-22.21:50:47.466 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-22.21:50:50.439 [main            ] INFO  RaffleStrategyTest_6_9 - Starting RaffleStrategyTest_6_9 using Java 1.8.0_412 on lumine.local with PID 25469 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-22.21:50:50.440 [main            ] INFO  RaffleStrategyTest_6_9 - The following 1 profile is active: "dev"
+24-07-22.21:50:50.950 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-22.21:50:50.957 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-22.21:50:50.974 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+24-07-22.21:50:51.518 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-22.21:50:51.546 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-22.21:50:51.670 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.21:50:51.679 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.21:50:52.985 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-22.21:50:53.029 [main            ] INFO  RaffleStrategyTest_6_9 - Started RaffleStrategyTest_6_9 in 2.859 seconds (JVM running for 3.546)
+24-07-22.21:50:53.457 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-22.21:50:53.687 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-22.21:50:53.737 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.21:50:53.740 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.21:50:58.891 [main            ] INFO  DefaultLogicChain      - 【默认抽奖规则】userId:xlm,strategyId:100003,awardId:107
+24-07-22.21:51:01.147 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xlm 100003 107 rule_default
+24-07-22.21:53:44.837 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m48s116ms).
+24-07-22.21:54:25.541 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+24-07-22.21:54:25.544 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+24-07-22.21:54:25.545 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_luck_award code:0001
+24-07-22.21:54:25.546 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xlm 100003 101 1,100
+24-07-22.21:54:25.690 [main            ] INFO  RaffleStrategyTest_6_9 - 请求参数：{"strategyId":100003,"userId":"xlm"}
+24-07-22.21:54:25.694 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：{"awardConfig":"1,100","awardId":101}
+24-07-22.21:54:25.707 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-22.21:54:27.579 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-22.22:13:02.305 [main            ] INFO  RaffleStrategyTest_6_9 - Starting RaffleStrategyTest_6_9 using Java 1.8.0_412 on lumine.local with PID 27298 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-22.22:13:02.305 [main            ] INFO  RaffleStrategyTest_6_9 - The following 1 profile is active: "dev"
+24-07-22.22:13:02.904 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-22.22:13:02.906 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-22.22:13:02.937 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+24-07-22.22:13:03.515 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-22.22:13:03.548 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-22.22:13:03.677 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.22:13:03.685 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.22:13:05.242 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-22.22:13:05.293 [main            ] INFO  RaffleStrategyTest_6_9 - Started RaffleStrategyTest_6_9 in 3.27 seconds (JVM running for 4.011)
+24-07-22.22:13:05.786 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-22.22:13:06.033 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-22.22:13:06.090 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.22:13:06.096 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.22:13:12.048 [main            ] INFO  DefaultLogicChain      - 【默认抽奖规则】userId:xlm,strategyId:100006,awardId:102
+24-07-22.22:13:12.699 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xlm 100006 102 rule_default
+24-07-22.22:13:39.420 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+24-07-22.22:13:39.421 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+24-07-22.22:13:39.423 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_luck_award code:0001
+24-07-22.22:13:39.423 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xlm 100006 101 1,100
+24-07-22.22:13:39.589 [main            ] INFO  RaffleStrategyTest_6_9 - 请求参数：{"strategyId":100006,"userId":"xlm"}
+24-07-22.22:13:39.593 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：{"awardConfig":"1,100","awardId":101}
+24-07-22.22:13:39.602 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-22.22:13:39.611 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-22.22:14:01.216 [main            ] INFO  RaffleStrategyTest_6_9 - Starting RaffleStrategyTest_6_9 using Java 1.8.0_412 on lumine.local with PID 27376 (started by lumine in /Users/lumine/code/java/xlm-market/xlm-market-app)
+24-07-22.22:14:01.217 [main            ] INFO  RaffleStrategyTest_6_9 - The following 1 profile is active: "dev"
+24-07-22.22:14:01.894 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-22.22:14:01.896 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-22.22:14:01.917 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+24-07-22.22:14:02.475 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-22.22:14:02.504 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-22.22:14:02.629 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.22:14:02.638 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-22.22:14:04.083 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-22.22:14:04.132 [main            ] INFO  RaffleStrategyTest_6_9 - Started RaffleStrategyTest_6_9 in 3.216 seconds (JVM running for 3.928)
+24-07-22.22:14:04.505 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-22.22:14:04.730 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-22.22:14:04.789 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.22:14:04.795 [main            ] INFO  RaffleStrategyTest_6_9 - 测试结果：true
+24-07-22.22:14:06.201 [main            ] INFO  DefaultLogicChain      - 【默认抽奖规则】userId:xlm,strategyId:100006,awardId:102
+24-07-22.22:14:06.204 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xlm 100006 102 rule_default
+24-07-22.22:15:25.964 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s750ms).
+24-07-22.22:15:57.352 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+24-07-22.22:16:04.303 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001

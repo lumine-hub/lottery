@@ -1,6 +1,5 @@
 package com.xlm.domain.model.vo;
 
-import com.xlm.domain.service.rule.filter.factory.DefaultLogicFactory;
 import com.xlm.types.common.Constants;
 import lombok.Builder;
 import lombok.Data;
@@ -17,24 +16,4 @@ import java.util.List;
 @Builder
 public class StrategyAwardRuleModelVO {
     private String ruleModels;
-    public String[] raffleCenterRuleModelList() {
-        List<String> ruleModelList = new ArrayList<>();
-        for (String ruleModel : ruleModels.split(Constants.SPLIT)) {
-            if (DefaultLogicFactory.LogicModel.isCenter(ruleModel)) {
-                ruleModelList.add(ruleModel);
-            }
-        }
-        return ruleModelList.toArray(new String[ruleModelList.size()]);
-    }
-
-//    public String[] raffleAfterRuleModelList() {
-//        List<String> ruleModelList = new ArrayList<>();
-//        String[] ruleModelValues = ruleModels.split(Constants.SPLIT);
-//        for (String ruleModelValue : ruleModelValues) {
-//            if (DefaultLogicFactory.LogicModel.isAfter(ruleModelValue)) {
-//                ruleModelList.add(ruleModelValue);
-//            }
-//        }
-//        return ruleModelList.toArray(new String[0]);
-//    }
 }

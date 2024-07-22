@@ -9,6 +9,6 @@ import com.xlm.domain.service.rule.tree.factory.DefaultTreeFactory;
  */
 public interface IDecisionTreeEngine {
 
-    DefaultTreeFactory.StrategyAwardData process(String userId, Long strategyId, Integer awardId);
+    DefaultTreeFactory.StrategyAwardVo process(String userId, Long strategyId, Integer awardId);
 
 }

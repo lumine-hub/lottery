@@ -2,6 +2,7 @@ package com.xlm.domain.service.rule.chain.impl;
 
 import com.xlm.domain.service.armory.IStrategyDispatch;
 import com.xlm.domain.service.rule.chain.AbstractLogicChain;
+import com.xlm.domain.service.rule.chain.factory.DefaultChainFactory;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
@@ -19,14 +20,17 @@ public class DefaultLogicChain extends AbstractLogicChain {
     @Resource
     private IStrategyDispatch strategyDispatch;
     @Override
-    public Integer logic(String userId,Long strategyId) {
+    public DefaultChainFactory.StrategyAwardVO logic(String userId, Long strategyId) {
         Integer awardId = strategyDispatch.getRandomAwardId(strategyId);
         log.info("【默认抽奖规则】userId:{},strategyId:{},awardId:{}", userId, strategyId, awardId);
-        return awardId;
+        return DefaultChainFactory.StrategyAwardVO.builder()
+                .awardId(awardId)
+                .logicModel(ruleModel())
+                .build();
     }
 
     @Override
     protected String ruleModel() {
-        return "default";
+        return DefaultChainFactory.LogicModel.RULE_DEFAULT.getCode();
     }
 }

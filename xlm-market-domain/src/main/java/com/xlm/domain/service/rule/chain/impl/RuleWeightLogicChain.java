@@ -3,6 +3,7 @@ package com.xlm.domain.service.rule.chain.impl;
 import com.xlm.domain.repository.IStrategyRepository;
 import com.xlm.domain.service.armory.IStrategyDispatch;
 import com.xlm.domain.service.rule.chain.AbstractLogicChain;
+import com.xlm.domain.service.rule.chain.factory.DefaultChainFactory;
 import com.xlm.types.common.Constants;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
@@ -38,7 +39,7 @@ public class RuleWeightLogicChain extends AbstractLogicChain {
      * 2. 解析数据格式；判断哪个范围符合用户的特定抽奖范围
      */
     @Override
-    public Integer logic(String userId,Long strategyId) {
+    public DefaultChainFactory.StrategyAwardVO logic(String userId, Long strategyId) {
         log.info("RuleWeightLogicChain start strategyId:{},userId:{}", strategyId, userId);
         // ruleValue格式 4000:102,103,104,105 5000:102,103,104,105,106,107 6000:102,103,104,105,106,107,108,109
         String ruleValue = repository.queryStrategyRuleValue(strategyId, ruleModel());
@@ -58,7 +59,10 @@ public class RuleWeightLogicChain extends AbstractLogicChain {
             String ruleWeightValue = ruleValueMap.get(key);
             Integer awardId = strategyDispatch.getRandomAwardId(strategyId, ruleWeightValue);
             log.info("抽奖责任链-权重接管 userId: {} strategyId: {} ruleModel: {} awardId: {}", userId, strategyId, ruleModel(), awardId);
-            return awardId;
+            return DefaultChainFactory.StrategyAwardVO.builder()
+                    .awardId(awardId)
+                    .logicModel(ruleModel())
+                    .build();
         }
         //用户积分哪个都不够，放行
         return next().logic(userId, strategyId);
@@ -80,6 +84,6 @@ public class RuleWeightLogicChain extends AbstractLogicChain {
 
     @Override
     protected String ruleModel() {
-        return "rule_weight";
+        return DefaultChainFactory.LogicModel.RULE_WEIGHT.getCode();
     }
 }

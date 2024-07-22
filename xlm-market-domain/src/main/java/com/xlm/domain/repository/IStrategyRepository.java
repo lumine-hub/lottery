@@ -3,6 +3,7 @@ package com.xlm.domain.repository;
 import com.xlm.domain.model.entity.StrategyAwardEntity;
 import com.xlm.domain.model.entity.StrategyEntity;
 import com.xlm.domain.model.entity.StrategyRuleEntity;
+import com.xlm.domain.model.vo.RuleTreeVO;
 import com.xlm.domain.model.vo.StrategyAwardRuleModelVO;
 
 import java.util.List;
@@ -33,4 +34,6 @@ public interface IStrategyRepository {
     String queryStrategyRuleValue(Long strategyId, Integer awardId, String ruleModel);
     String queryStrategyRuleValue(Long strategyId, String ruleModel);
     StrategyAwardRuleModelVO queryStrategyAwardRuleModelVO(Long strategyId, Integer awardId);
+
+    RuleTreeVO queryRuleTreeVOByTreeId(String treeLock);
 }
