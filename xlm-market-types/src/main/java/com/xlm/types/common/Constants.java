@@ -30,7 +30,8 @@ public class Constants {
         // 存放的是某个奖品的库存，key是strategyId、awardId，value是当前库存
         public static String STRATEGY_AWARD_COUNT_KEY = "strategy_award_count_key_";
 
-        // 当某个奖品库存被成功扣减后，将发送一条这个消息。key是strategyId和awardId
+        // 当某个奖品库存被成功扣减后，将发送一条这个消息。key是strategyId和awardId，后续会有定时任务去查询
+        // 这个消息队列，去执行同步到数据库中。
         public static String STRATEGY_AWARD_COUNT_QUERY_KEY = "strategy_award_count_query_key";
     }
 
