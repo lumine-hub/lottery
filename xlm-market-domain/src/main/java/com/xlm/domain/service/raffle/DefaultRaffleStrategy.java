@@ -2,6 +2,7 @@ package com.xlm.domain.service.raffle;
 
 import com.xlm.domain.model.vo.RuleTreeVO;
 import com.xlm.domain.model.vo.StrategyAwardRuleModelVO;
+import com.xlm.domain.model.vo.StrategyAwardStockKeyVO;
 import com.xlm.domain.repository.IStrategyRepository;
 import com.xlm.domain.service.AbstractRaffleStrategy;
 import com.xlm.domain.service.armory.IStrategyDispatch;
@@ -33,10 +34,10 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
     }
 
     @Override
-    public DefaultTreeFactory.StrategyAwardVo raffleLogicTree(String userId, Long strategyId, Integer awardId) {
+    public DefaultTreeFactory.StrategyAwardVO raffleLogicTree(String userId, Long strategyId, Integer awardId) {
         StrategyAwardRuleModelVO strategyAwardRuleModelVO = repository.queryStrategyAwardRuleModelVO(strategyId, awardId);
         if (null == strategyAwardRuleModelVO) {
-            return DefaultTreeFactory.StrategyAwardVo.builder().awardId(awardId).build();
+            return DefaultTreeFactory.StrategyAwardVO.builder().awardId(awardId).build();
         }
         RuleTreeVO ruleTreeVO = repository.queryRuleTreeVOByTreeId(strategyAwardRuleModelVO.getRuleModels());
         if (null == ruleTreeVO) {
@@ -44,6 +45,16 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
         }
         IDecisionTreeEngine treeEngine = defaultTreeFactory.openLogicTree(ruleTreeVO);
         return treeEngine.process(userId, strategyId, awardId);
+    }
+
+    @Override
+    public StrategyAwardStockKeyVO takeQueueValue() throws InterruptedException {
+        return repository.takeQueueValue();
+    }
+
+    @Override
+    public void updateStrategyAwardStock(Long strategyId, Integer awardId) {
+        repository.updateStrategyAwardStock(strategyId, awardId);
     }
 
 }

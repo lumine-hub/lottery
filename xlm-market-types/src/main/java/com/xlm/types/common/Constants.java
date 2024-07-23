@@ -5,6 +5,8 @@ public class Constants {
     public final static String SPLIT = ",";
     public final static String COLON = ":";
     public final static String SPACE = " ";
+    public final static String UNDERLINE = "_";
+
 
     public static class RedisKey {
         // 存放每一种策略的数据，key为strategyId, value为StrategyEntity
@@ -22,8 +24,14 @@ public class Constants {
         // 比如，key是100001，value是250，那么之后别人获取随机数就是1-250
         public static String STRATEGY_RATE_RANGE_KEY = "big_market_strategy_rate_range_key_";
 
-        // 存放的是运用于规则中抽奖的tree模型
+        // 存放的是运用于规则中抽奖的tree模型，key是treeId，value是构造的那一棵决策树
         public static String RULE_TREE_VO_KEY = "rule_tree_vo_key_";
+
+        // 存放的是某个奖品的库存，key是strategyId、awardId，value是当前库存
+        public static String STRATEGY_AWARD_COUNT_KEY = "strategy_award_count_key_";
+
+        // 当某个奖品库存被成功扣减后，将发送一条这个消息。key是strategyId和awardId
+        public static String STRATEGY_AWARD_COUNT_QUERY_KEY = "strategy_award_count_query_key";
     }
 
 }

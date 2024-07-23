@@ -5,6 +5,7 @@ import com.xlm.domain.model.entity.StrategyEntity;
 import com.xlm.domain.model.entity.StrategyRuleEntity;
 import com.xlm.domain.model.vo.RuleTreeVO;
 import com.xlm.domain.model.vo.StrategyAwardRuleModelVO;
+import com.xlm.domain.model.vo.StrategyAwardStockKeyVO;
 
 import java.util.List;
 import java.util.Map;
@@ -36,4 +37,15 @@ public interface IStrategyRepository {
     StrategyAwardRuleModelVO queryStrategyAwardRuleModelVO(Long strategyId, Integer awardId);
 
     RuleTreeVO queryRuleTreeVOByTreeId(String treeLock);
+
+    void cacheStrategyAwardCount(String cacheKey, Integer awardCount);
+
+    boolean subtractionAwardStock(String cacheKey);
+
+    void awardStockConsumeSendQueue(StrategyAwardStockKeyVO build);
+
+    StrategyAwardStockKeyVO takeQueueValue();
+
+
+    void updateStrategyAwardStock(Long strategyId, Integer awardId);
 }

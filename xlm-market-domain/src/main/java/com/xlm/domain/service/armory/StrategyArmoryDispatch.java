@@ -4,6 +4,7 @@ import com.xlm.domain.model.entity.StrategyAwardEntity;
 import com.xlm.domain.model.entity.StrategyEntity;
 import com.xlm.domain.model.entity.StrategyRuleEntity;
 import com.xlm.domain.repository.IStrategyRepository;
+import com.xlm.types.common.Constants;
 import com.xlm.types.enums.ResponseCode;
 import com.xlm.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
@@ -31,7 +32,17 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
     public boolean assembleLotteryStrategy(Long strategyId) {
         //1.根据strategyId查询策略配置
         List<StrategyAwardEntity> strategyAwardEntities = repository.queryStrategyAwardList(strategyId);
-        //2.保存配置信息
+
+        //2.缓存商品库存，用于curd库存数量
+        for (StrategyAwardEntity strategyAwardEntity : strategyAwardEntities) {
+            Long strategyId1 = strategyAwardEntity.getStrategyId();
+            Integer awardCount = strategyAwardEntity.getAwardCount();
+            Integer awardId = strategyAwardEntity.getAwardId();
+
+            cacheStrategyAwardCount(strategyId1, awardId, awardCount);
+        }
+
+        //2.保存配置信息 【全量抽奖概率】
         assembleLotteryStrategy(String.valueOf(strategyId), strategyAwardEntities);
         //3.权重策略配置 - 适用于 rule_weight 权重规则配置
         StrategyEntity strategyEntity = repository.queryStrategyEntityByStrategyId(strategyId);
@@ -50,6 +61,12 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
         }
         return true;
     }
+
+    private void cacheStrategyAwardCount(Long strategyId, Integer awardId, Integer awardCount) {
+        String cacheKey = Constants.RedisKey.STRATEGY_AWARD_COUNT_KEY + strategyId + Constants.UNDERLINE + awardId;
+        repository.cacheStrategyAwardCount(cacheKey, awardCount);
+    }
+
 
     public void assembleLotteryStrategy(String key, List<StrategyAwardEntity> strategyAwardEntities) {
         if (strategyAwardEntities == null || strategyAwardEntities.isEmpty()) return;
@@ -104,6 +121,13 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
         int rateRange = repository.getRateRange(key);
         // 通过生成的随机值，获取概率值奖品查找表的结果
         return repository.getStrategyAwardAssemble(key, new SecureRandom().nextInt(rateRange));
+    }
+
+    @Override
+    public boolean subtractionAwardStock(Long strategyId, Integer awardId) {
+        String cacheKey = Constants.RedisKey.STRATEGY_AWARD_COUNT_KEY + strategyId + Constants.UNDERLINE + awardId;
+
+        return repository.subtractionAwardStock(cacheKey);
     }
 
 }

@@ -14,5 +14,9 @@ public interface IStrategyDispatch {
      */
     Integer getRandomAwardId(Long strategyId);
 
+    // 权重抽奖
     Integer getRandomAwardId(Long strategyId, String ruleWeightValue);
+
+    // 库存库减
+    boolean subtractionAwardStock(Long strategyId, Integer awardId);
 }

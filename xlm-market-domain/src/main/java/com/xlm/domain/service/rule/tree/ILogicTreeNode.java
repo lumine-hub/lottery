@@ -15,6 +15,6 @@ public interface ILogicTreeNode {
      * @param awardId
      * @return 过滤结果：应包含放行还是接管、awardId、ruleId
      */
-    DefaultTreeFactory.TreeActionEntity logic(String userId, Long strategyId, Integer awardId);
+    DefaultTreeFactory.TreeActionEntity logic(String userId, Long strategyId, Integer awardId, String ruleValue);
 
 }
