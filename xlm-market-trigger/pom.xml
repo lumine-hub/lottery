@@ -36,6 +36,11 @@
             <groupId>com.xlm</groupId>
             <artifactId>xlm-market-domain</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.xlm</groupId>
+            <artifactId>xlm-market-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>

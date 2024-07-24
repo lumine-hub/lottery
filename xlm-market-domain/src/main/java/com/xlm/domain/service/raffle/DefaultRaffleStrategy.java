@@ -1,10 +1,13 @@
 package com.xlm.domain.service.raffle;
 
+import com.xlm.domain.model.entity.StrategyAwardEntity;
 import com.xlm.domain.model.vo.RuleTreeVO;
 import com.xlm.domain.model.vo.StrategyAwardRuleModelVO;
 import com.xlm.domain.model.vo.StrategyAwardStockKeyVO;
 import com.xlm.domain.repository.IStrategyRepository;
 import com.xlm.domain.service.AbstractRaffleStrategy;
+import com.xlm.domain.service.IRaffleAward;
+import com.xlm.domain.service.IRaffleStock;
 import com.xlm.domain.service.armory.IStrategyDispatch;
 import com.xlm.domain.service.rule.chain.ILogicChain;
 import com.xlm.domain.service.rule.chain.factory.DefaultChainFactory;
@@ -12,6 +15,9 @@ import com.xlm.domain.service.rule.tree.factory.DefaultTreeFactory;
 import com.xlm.domain.service.rule.tree.factory.engine.IDecisionTreeEngine;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+
+import java.util.Collections;
+import java.util.List;
 
 
 /**
@@ -21,7 +27,7 @@ import org.springframework.stereotype.Service;
  */
 @Slf4j
 @Service
-public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
+public class DefaultRaffleStrategy extends AbstractRaffleStrategy implements IRaffleAward, IRaffleStock {
 
     public DefaultRaffleStrategy(IStrategyRepository repository, IStrategyDispatch strategyDispatch, DefaultChainFactory defaultChainFactory, DefaultTreeFactory defaultTreeFactory) {
         super(repository, strategyDispatch, defaultChainFactory, defaultTreeFactory);
@@ -57,4 +63,8 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
         repository.updateStrategyAwardStock(strategyId, awardId);
     }
 
+    @Override
+    public List<StrategyAwardEntity> queryRaffleStrategyAwardList(Long strategyId) {
+        return repository.queryStrategyAwardList(strategyId);
+    }
 }

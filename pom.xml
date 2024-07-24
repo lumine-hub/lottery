@@ -13,6 +13,7 @@
         <module>xlm-market-trigger</module>
         <module>xlm-market-infrastructure</module>
         <module>xlm-market-types</module>
+        <module>xlm-market-api</module>
     </modules>
 
     <repositories>
