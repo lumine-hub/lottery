@@ -157,7 +157,7 @@ public class StrategyRepository implements IStrategyRepository {
         return StrategyAwardRuleModelVO.builder().ruleModels(s).build();
     }
     @Override
-    public RuleTreeVO queryRuleTreeVOByTreeId(String treeId) {
+    public RuleTreeVO queryRuleTreeVOByTreeId(String treeId) { //构造整条决策树
         // 优先从缓存获取
         String cacheKey = Constants.RedisKey.RULE_TREE_VO_KEY + treeId;
         RuleTreeVO ruleTreeVOCache = redisService.getValue(cacheKey);

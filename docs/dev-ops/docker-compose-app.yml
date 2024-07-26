@@ -1,21 +1,50 @@
-# /usr/local/bin/docker-compose -f /docs/dev-ops/environment/environment-docker-compose-2.4.yml up -d
 version: '3.8'
-# docker-compose -f docker-compose-app.yml up -d
-# 你需要修改system为你自身系统的仓库名
+# 命令执行 docker-compose -f docker-compose-app.yml up -d
 services:
-  xlm-market:
-    image: system/xlm-market:1.0-SNAPSHOT
-    container_name: xlm-market
-    restart: on-failure
+  xlm-market-app:
+    image: xuluming/xlm-market-app:1.0
+    container_name: xlm-market-app
+    restart: always
     ports:
       - "8091:8091"
     environment:
       - TZ=PRC
       - SERVER_PORT=8091
+      - APP_CONFIG_API_VERSION=v1
+      - APP_CONFIG_CROSS_ORIGIN=*
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=1234
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/big_market?serverTimezone=UTC&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Shanghai
+      - SPRING_DATASOURCE_DRIVER_CLASS_NAME=com.mysql.cj.jdbc.Driver
+      - SPRING_HIKARI_POOL_NAME=Retail_HikariCP
+      - REDIS_SDK_CONFIG_HOST=redis
+      - REDIS_SDK_CONFIG_PORT=6379
     volumes:
       - ./log:/data/log
+    networks:
+      - market-network
     logging:
       driver: "json-file"
       options:
         max-size: "10m"
         max-file: "3"
+  xlm-market-front-app:
+    container_name: xlm-market-front-app
+    image: xuluming/xlm-market-front-app:1.0
+    restart: always
+    networks:
+      - market-network
+    ports:
+      - 3000:3000 # 制作镜像时，在dockerfile中我们打包时export的端口时3000，所以后面的3000不能修改
+    environment:
+      - API_HOST_URL=http://81.70.249.53:8091 # 必须改成自己云服务器的ip地址，用户访问的时候会用到这个地址。
+      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+    healthcheck: # 容器健康检查（心跳检测）
+      test: [ "CMD", "wget", "--spider", "-q", "http://0.0.0.0:3000/" ]
+      interval: 1m
+      timeout: 10s
+      retries: 3
+
+networks:
+  market-network:
+    driver: bridge

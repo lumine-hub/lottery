@@ -34,17 +34,17 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
     public DefaultTreeFactory.StrategyAwardVO process(String userId, Long strategyId, Integer awardId) {
         DefaultTreeFactory.StrategyAwardVO strategyAwardData = null;
 
-        // 获取基础信息
+        // 获取决策树的第一个执行节点，比如rule_lock还是rule_stock还是其他
         String nextNode = ruleTreeVO.getTreeRootRuleNode();
         Map<String, RuleTreeNodeVO> treeNodeMap = ruleTreeVO.getTreeNodeMap();
 
-        // 获取起始节点「根节点记录了第一个要执行的规则」
+        // 获取起始节点对应的规则tree_node表，这个表有规则（ryle_lock）,还有rule_value（2，抽2次解锁）「根节点记录了第一个要执行的规则」
         RuleTreeNodeVO ruleTreeNode = treeNodeMap.get(nextNode);
-        while (null != nextNode) {
-            // 获取决策节点
+        while (null != nextNode) { // 假如是rule_lock【判断抽奖2次后解锁】
+            // 获取rule_lock对应的实现类
             ILogicTreeNode logicTreeNode = logicTreeNodeGroup.get(ruleTreeNode.getRuleKey());
-            String ruleValue = ruleTreeNode.getRuleValue();
-            // 决策节点计算
+            String ruleValue = ruleTreeNode.getRuleValue(); // 得到rule_value，rule_lock对应的抽2次解锁，rule_luck_award对应兜底奖励101:1,100， rule_stock对应null
+            // 决策节点计算，结果可能是放行，也可能不放行
             DefaultTreeFactory.TreeActionEntity logicEntity = logicTreeNode.logic(userId, strategyId, awardId, ruleValue);
             RuleLogicCheckTypeVO ruleLogicCheckTypeVO = logicEntity.getRuleLogicCheckType();
             strategyAwardData = logicEntity.getStrategyAwardVO();
