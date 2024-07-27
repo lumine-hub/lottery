@@ -1,7 +1,8 @@
 package com.xlm.test.infrastructure;
 
 
-import com.alibaba.fastjson2.JSON;
+
+import com.alibaba.fastjson.JSON;
 import com.xlm.domain.model.vo.RuleTreeVO;
 import com.xlm.domain.repository.IStrategyRepository;
 import lombok.extern.slf4j.Slf4j;
