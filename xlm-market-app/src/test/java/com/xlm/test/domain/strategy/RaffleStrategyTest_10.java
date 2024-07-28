@@ -1,14 +1,14 @@
 package com.xlm.test.domain.strategy;
 
 import com.alibaba.fastjson.JSON;
-import com.xlm.domain.model.entity.RaffleAwardEntity;
-import com.xlm.domain.model.entity.RaffleFactorEntity;
-import com.xlm.domain.model.vo.StrategyAwardStockKeyVO;
-import com.xlm.domain.service.IRaffleStock;
-import com.xlm.domain.service.IRaffleStrategy;
-import com.xlm.domain.service.armory.IStrategyArmory;
-import com.xlm.domain.service.rule.chain.impl.RuleWeightLogicChain;
-import com.xlm.domain.service.rule.tree.impl.RuleLockLogicTreeNode;
+import com.xlm.domain.strategy.model.entity.RaffleAwardEntity;
+import com.xlm.domain.strategy.model.entity.RaffleFactorEntity;
+import com.xlm.domain.strategy.model.vo.StrategyAwardStockKeyVO;
+import com.xlm.domain.strategy.service.IRaffleStock;
+import com.xlm.domain.strategy.service.IRaffleStrategy;
+import com.xlm.domain.strategy.service.armory.IStrategyArmory;
+import com.xlm.domain.strategy.service.rule.chain.impl.RuleWeightLogicChain;
+import com.xlm.domain.strategy.service.rule.tree.impl.RuleLockLogicTreeNode;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
 import org.junit.Test;

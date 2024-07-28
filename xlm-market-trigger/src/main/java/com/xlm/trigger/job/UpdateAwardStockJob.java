@@ -1,7 +1,7 @@
 package com.xlm.trigger.job;
 
-import com.xlm.domain.model.vo.StrategyAwardStockKeyVO;
-import com.xlm.domain.service.IRaffleStock;
+import com.xlm.domain.strategy.model.vo.StrategyAwardStockKeyVO;
+import com.xlm.domain.strategy.service.IRaffleStock;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;

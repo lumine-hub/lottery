@@ -1,10 +1,10 @@
 package com.xlm.infrastructure.persistent.repository;
 
-import com.xlm.domain.model.entity.StrategyAwardEntity;
-import com.xlm.domain.model.entity.StrategyEntity;
-import com.xlm.domain.model.entity.StrategyRuleEntity;
-import com.xlm.domain.model.vo.*;
-import com.xlm.domain.repository.IStrategyRepository;
+import com.xlm.domain.strategy.model.entity.StrategyAwardEntity;
+import com.xlm.domain.strategy.model.entity.StrategyEntity;
+import com.xlm.domain.strategy.model.entity.StrategyRuleEntity;
+import com.xlm.domain.strategy.model.vo.*;
+import com.xlm.domain.strategy.repository.IStrategyRepository;
 import com.xlm.infrastructure.persistent.dao.*;
 import com.xlm.infrastructure.persistent.po.*;
 import com.xlm.infrastructure.persistent.redis.IRedisService;

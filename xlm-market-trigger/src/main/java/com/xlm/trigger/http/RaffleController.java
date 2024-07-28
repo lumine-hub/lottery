@@ -1,12 +1,12 @@
 package com.xlm.trigger.http;
 
 import com.alibaba.fastjson.JSON;
-import com.xlm.domain.model.entity.RaffleAwardEntity;
-import com.xlm.domain.model.entity.RaffleFactorEntity;
-import com.xlm.domain.model.entity.StrategyAwardEntity;
-import com.xlm.domain.service.IRaffleAward;
-import com.xlm.domain.service.IRaffleStrategy;
-import com.xlm.domain.service.armory.IStrategyArmory;
+import com.xlm.domain.strategy.model.entity.RaffleAwardEntity;
+import com.xlm.domain.strategy.model.entity.RaffleFactorEntity;
+import com.xlm.domain.strategy.model.entity.StrategyAwardEntity;
+import com.xlm.domain.strategy.service.IRaffleAward;
+import com.xlm.domain.strategy.service.IRaffleStrategy;
+import com.xlm.domain.strategy.service.armory.IStrategyArmory;
 import com.xlm.trigger.api.IRaffleService;
 import com.xlm.trigger.api.dto.RaffleAwardListRequestDTO;
 import com.xlm.trigger.api.dto.RaffleAwardListResponseDTO;

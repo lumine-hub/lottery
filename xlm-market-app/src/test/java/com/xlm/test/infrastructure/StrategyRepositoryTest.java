@@ -3,8 +3,8 @@ package com.xlm.test.infrastructure;
 
 
 import com.alibaba.fastjson.JSON;
-import com.xlm.domain.model.vo.RuleTreeVO;
-import com.xlm.domain.repository.IStrategyRepository;
+import com.xlm.domain.strategy.model.vo.RuleTreeVO;
+import com.xlm.domain.strategy.repository.IStrategyRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

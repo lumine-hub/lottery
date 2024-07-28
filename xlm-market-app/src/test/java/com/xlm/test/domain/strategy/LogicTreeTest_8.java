@@ -1,9 +1,9 @@
 package com.xlm.test.domain.strategy;
 
 import com.alibaba.fastjson.JSON;
-import com.xlm.domain.model.vo.*;
-import com.xlm.domain.service.rule.tree.factory.DefaultTreeFactory;
-import com.xlm.domain.service.rule.tree.factory.engine.IDecisionTreeEngine;
+import com.xlm.domain.strategy.model.vo.*;
+import com.xlm.domain.strategy.service.rule.tree.factory.DefaultTreeFactory;
+import com.xlm.domain.strategy.service.rule.tree.factory.engine.IDecisionTreeEngine;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

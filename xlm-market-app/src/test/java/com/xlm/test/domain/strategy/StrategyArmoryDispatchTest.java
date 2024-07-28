@@ -1,7 +1,7 @@
 package com.xlm.test.domain.strategy;
 
 
-import com.xlm.domain.service.armory.StrategyArmoryDispatch;
+import com.xlm.domain.strategy.service.armory.StrategyArmoryDispatch;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
 import org.junit.Test;

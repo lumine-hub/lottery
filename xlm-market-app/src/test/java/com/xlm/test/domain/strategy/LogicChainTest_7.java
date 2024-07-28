@@ -1,10 +1,10 @@
 package com.xlm.test.domain.strategy;
 
 import com.alibaba.fastjson.JSON;
-import com.xlm.domain.service.armory.IStrategyArmory;
-import com.xlm.domain.service.rule.chain.ILogicChain;
-import com.xlm.domain.service.rule.chain.factory.DefaultChainFactory;
-import com.xlm.domain.service.rule.chain.impl.RuleWeightLogicChain;
+import com.xlm.domain.strategy.service.armory.IStrategyArmory;
+import com.xlm.domain.strategy.service.rule.chain.ILogicChain;
+import com.xlm.domain.strategy.service.rule.chain.factory.DefaultChainFactory;
+import com.xlm.domain.strategy.service.rule.chain.impl.RuleWeightLogicChain;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
 import org.junit.Test;
