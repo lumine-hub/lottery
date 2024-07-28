@@ -1,4 +1,4 @@
-package com.xlm.test.domain;
+package com.xlm.test.domain.strategy;
 
 import com.alibaba.fastjson.JSON;
 import com.xlm.domain.service.armory.IStrategyArmory;

@@ -14,7 +14,7 @@ public class Constants {
 
         // 存放每一种策略的奖品信息 key为strategyId，value为List<StrategyAward>
         public static String STRATEGY_AWARD_KEY = "big_market_strategy_award_key_";
-
+        // 和上面一样，实际上差不多
         public static String STRATEGY_AWARD_LIST_KEY = "big_market_strategy_award_list_key_";
 
         // 存放每一种策略的hash表信息，key为strategyId或者strategyId_4000,4000表示用户已经抽了多少积分，
@@ -35,6 +35,17 @@ public class Constants {
         // 当某个奖品库存被成功扣减后，将发送一条这个消息。key是strategyId和awardId，后续会有定时任务去查询
         // 这个消息队列，去执行同步到数据库中。
         public static String STRATEGY_AWARD_COUNT_QUERY_KEY = "strategy_award_count_query_key";
+
+        // 存放的是活动信息，key是activityId，value是ActivityEntity
+        public static String ACTIVITY_KEY = "big_market_activity_key_";
+
+        // 存放的是活动sku信息，key是activityId，value是ActivitySkuEntity
+        public static String ACTIVITY_SKU_KEY = "big_market_activity_sku_key_";
+
+        // 存放的是活动sku信息，key是activityId，value是ActivitySkuEntity
+        public static String ACTIVITY_COUNT_KEY = "big_market_activity_count_key_";
+
     }
+
 
 }

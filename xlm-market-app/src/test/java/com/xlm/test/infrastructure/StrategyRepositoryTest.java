@@ -13,11 +13,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
 
-/**
- * @author Fuzhengwei bugstack.cn @小傅哥
- * @description 策略仓储测试
- * @create 2024-02-03 09:43
- */
+
 @Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest
