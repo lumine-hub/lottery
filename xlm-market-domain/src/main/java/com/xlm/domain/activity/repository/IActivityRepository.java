@@ -4,8 +4,10 @@ import com.xlm.domain.activity.model.aggregate.CreateOrderAggregate;
 import com.xlm.domain.activity.model.entity.ActivityCountEntity;
 import com.xlm.domain.activity.model.entity.ActivityEntity;
 import com.xlm.domain.activity.model.entity.ActivitySkuEntity;
+import com.xlm.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 
 import java.lang.reflect.InvocationTargetException;
+import java.util.Date;
 
 /**
  * @author xlm
@@ -20,4 +22,19 @@ public interface IActivityRepository {
     ActivityCountEntity queryRaffleActivityCountByActivityCountId(Long activityCountId);
 
     void doSaveOrder(CreateOrderAggregate createOrderAggregate);
+
+    boolean subtractionActivitySkuStock(Long sku, String cacheKey, Date endDateTime);
+
+    void activitySkuStockConsumeSendQueue(ActivitySkuStockKeyVO build);
+
+
+    ActivitySkuStockKeyVO takeQueueValue();
+
+    void clearQueueValue();
+
+    void updateActivitySkuStock(Long sku);
+
+    void clearActivitySkuStock(Long sku);
+
+    void cacheActivitySkuStockCount(String cacheKey, Integer stockCount);
 }

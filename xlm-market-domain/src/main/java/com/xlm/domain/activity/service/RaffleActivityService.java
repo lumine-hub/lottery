@@ -2,6 +2,7 @@ package com.xlm.domain.activity.service;
 
 import com.xlm.domain.activity.model.aggregate.CreateOrderAggregate;
 import com.xlm.domain.activity.model.entity.*;
+import com.xlm.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 import com.xlm.domain.activity.model.valobj.OrderStateVO;
 import com.xlm.domain.activity.repository.IActivityRepository;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -16,7 +17,7 @@ import java.util.Date;
  * 抽奖活动抽象类，抽奖活动服务
  */
 @Service
-public class RaffleActivityService extends AbstractRaffleActivity {
+public class RaffleActivityService extends AbstractRaffleActivity implements ISkuStock{
 
     public RaffleActivityService(IActivityRepository activityRepository) {
         super(activityRepository);
@@ -52,10 +53,29 @@ public class RaffleActivityService extends AbstractRaffleActivity {
                 .build();
     }
 
+
     @Override
     protected void doSaveOrder(CreateOrderAggregate createOrderAggregate) {
         activityRepository.doSaveOrder(createOrderAggregate);
     }
 
+    @Override
+    public ActivitySkuStockKeyVO takeQueueValue() throws InterruptedException {
+        return activityRepository.takeQueueValue();
+    }
 
+    @Override
+    public void clearQueueValue() {
+        activityRepository.clearQueueValue();
+    }
+
+    @Override
+    public void updateActivitySkuStock(Long sku) {
+        activityRepository.updateActivitySkuStock(sku);
+    }
+
+    @Override
+    public void clearActivitySkuStock(Long sku) {
+        activityRepository.clearActivitySkuStock(sku);
+    }
 }

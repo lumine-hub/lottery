@@ -2,6 +2,8 @@ package com.xlm.infrastructure.persistent.redis;
 
 import org.redisson.api.*;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * @author xlm
  * 2024/7/17 下午1:16
@@ -253,4 +255,5 @@ public interface IRedisService {
 
     Boolean setNx(String lockKey);
 
+    Boolean setNx(String lockKey, long expireMillis, TimeUnit timeUnit);
 }

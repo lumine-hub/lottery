@@ -47,11 +47,9 @@ public abstract class AbstractRaffleActivity implements IRaffleOrder {
 
         // 3.规则校验
         IActionChain actionChain = defaultActivityChainFactory.openActionChain();
-        boolean success = actionChain.action(activitySkuEntity, activityEntity, activityCountEntity);
+        // 为什么不需要返回值？因为false的话直接就异常出去了。
+        actionChain.action(activitySkuEntity, activityEntity, activityCountEntity);
 
-        if (!success) {
-            return "";
-        }
         // 4.创建聚合对象(订单对象)
         CreateOrderAggregate createOrderAggregate = buildOrderAggregate(skuRechargeEntity, activitySkuEntity, activityEntity, activityCountEntity);
 
