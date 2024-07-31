@@ -1,6 +1,6 @@
 package com.xlm.domain.activity.service.quota;
 
-import com.xlm.domain.activity.model.aggregate.CreateOrderAggregate;
+import com.xlm.domain.activity.model.aggregate.CreateQuotaOrderAggregate;
 import com.xlm.domain.activity.model.entity.*;
 import com.xlm.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 import com.xlm.domain.activity.model.valobj.OrderStateVO;
@@ -26,7 +26,7 @@ public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAcc
 
 
     @Override
-    protected CreateOrderAggregate buildOrderAggregate(SkuRechargeEntity skuRechargeEntity, ActivitySkuEntity activitySkuEntity, ActivityEntity activityEntity, ActivityCountEntity activityCountEntity) {
+    protected CreateQuotaOrderAggregate buildOrderAggregate(SkuRechargeEntity skuRechargeEntity, ActivitySkuEntity activitySkuEntity, ActivityEntity activityEntity, ActivityCountEntity activityCountEntity) {
         // 订单实体对象
         ActivityOrderEntity activityOrderEntity = new ActivityOrderEntity();
         activityOrderEntity.setUserId(skuRechargeEntity.getUserId());
@@ -44,7 +44,7 @@ public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAcc
         activityOrderEntity.setOutBusinessNo(skuRechargeEntity.getOutBusinessNo());
 
         // 构建聚合对象
-        return CreateOrderAggregate.builder()
+        return CreateQuotaOrderAggregate.builder()
                 .userId(skuRechargeEntity.getUserId())
                 .activityId(activitySkuEntity.getActivityId())
                 .totalCount(activityCountEntity.getTotalCount())
@@ -56,8 +56,8 @@ public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAcc
 
 
     @Override
-    protected void doSaveOrder(CreateOrderAggregate createOrderAggregate) {
-        activityRepository.doSaveOrder(createOrderAggregate);
+    protected void doSaveOrder(CreateQuotaOrderAggregate createQuotaOrderAggregate) {
+        activityRepository.doSaveOrder(createQuotaOrderAggregate);
     }
 
     @Override

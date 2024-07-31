@@ -1,6 +1,6 @@
 package com.xlm.domain.activity.service.quota;
 
-import com.xlm.domain.activity.model.aggregate.CreateOrderAggregate;
+import com.xlm.domain.activity.model.aggregate.CreateQuotaOrderAggregate;
 import com.xlm.domain.activity.model.entity.*;
 import com.xlm.domain.activity.repository.IActivityRepository;
 import com.xlm.domain.activity.service.IRaffleActivityAccountQuotaService;
@@ -16,7 +16,8 @@ import javax.annotation.Resource;
 /**
  * @author xlm
  * 2024/7/28 下午4:13
- * 抽奖活动抽象类，定义标准的流程
+ * 位于quota（资源配额）包下，所以该抽象类用于定义抽奖额度（抽奖次数）的流程。
+ * 比如：createOrder，就是创建用户通过sku获取抽奖机会的订单
  */
 @Slf4j
 public abstract class AbstractRaffleActivityAccountQuota implements IRaffleActivityAccountQuotaService {
@@ -51,18 +52,18 @@ public abstract class AbstractRaffleActivityAccountQuota implements IRaffleActiv
         actionChain.action(activitySkuEntity, activityEntity, activityCountEntity);
 
         // 4.创建聚合对象(订单对象)
-        CreateOrderAggregate createOrderAggregate = buildOrderAggregate(skuRechargeEntity, activitySkuEntity, activityEntity, activityCountEntity);
+        CreateQuotaOrderAggregate createQuotaOrderAggregate = buildOrderAggregate(skuRechargeEntity, activitySkuEntity, activityEntity, activityCountEntity);
 
         // 5. 保存订单
-        doSaveOrder(createOrderAggregate);
+        doSaveOrder(createQuotaOrderAggregate);
 
         // 6. 返回单号
-        return createOrderAggregate.getActivityOrderEntity().getOrderId();
+        return createQuotaOrderAggregate.getActivityOrderEntity().getOrderId();
 
     }
 
-    protected abstract void doSaveOrder(CreateOrderAggregate createOrderAggregate);
+    protected abstract void doSaveOrder(CreateQuotaOrderAggregate createQuotaOrderAggregate);
 
-    protected abstract CreateOrderAggregate buildOrderAggregate(SkuRechargeEntity skuRechargeEntity, ActivitySkuEntity activitySkuEntity, ActivityEntity activityEntity, ActivityCountEntity activityCountEntity);
+    protected abstract CreateQuotaOrderAggregate buildOrderAggregate(SkuRechargeEntity skuRechargeEntity, ActivitySkuEntity activitySkuEntity, ActivityEntity activityEntity, ActivityCountEntity activityCountEntity);
 
 }

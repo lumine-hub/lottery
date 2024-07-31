@@ -1,5 +1,6 @@
-package com.xlm.infrastructure.persistent.po;
+package com.xlm.domain.activity.model.entity;
 
+import com.xlm.domain.activity.model.valobj.UserRaffleOrderStateVO;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,17 +10,13 @@ import java.util.Date;
 
 /**
  * @author xlm
- * 2024/7/30 下午3:30
- * 用户抽奖订单表
+ * 2024/7/31 下午9:10
  */
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserRaffleOrder {
-
-    /** 用户ID */
-    private String id;
+public class UserRaffleOrderEntity {
     /** 活动ID */
     private String userId;
     /** 活动名称 */
@@ -33,10 +30,5 @@ public class UserRaffleOrder {
     /** 订单状态；create-创建、used-已使用、cancel-已作废 */
     private Date orderTime;
     /** 创建时间 */
-    private String orderState;
-    /** 更新时间 */
-    private Date createTime;
-    /**  */
-    private Date updateTime;
-
+    private UserRaffleOrderStateVO orderState;
 }

@@ -1,12 +1,10 @@
 package com.xlm.domain.activity.repository;
 
-import com.xlm.domain.activity.model.aggregate.CreateOrderAggregate;
-import com.xlm.domain.activity.model.entity.ActivityCountEntity;
-import com.xlm.domain.activity.model.entity.ActivityEntity;
-import com.xlm.domain.activity.model.entity.ActivitySkuEntity;
+import com.xlm.domain.activity.model.aggregate.CreatePartakeOrderAggregate;
+import com.xlm.domain.activity.model.aggregate.CreateQuotaOrderAggregate;
+import com.xlm.domain.activity.model.entity.*;
 import com.xlm.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.Date;
 
 /**
@@ -21,7 +19,7 @@ public interface IActivityRepository {
 
     ActivityCountEntity queryRaffleActivityCountByActivityCountId(Long activityCountId);
 
-    void doSaveOrder(CreateOrderAggregate createOrderAggregate);
+    void doSaveOrder(CreateQuotaOrderAggregate createQuotaOrderAggregate);
 
     boolean subtractionActivitySkuStock(Long sku, String cacheKey, Date endDateTime);
 
@@ -37,4 +35,14 @@ public interface IActivityRepository {
     void clearActivitySkuStock(Long sku);
 
     void cacheActivitySkuStockCount(String cacheKey, Integer stockCount);
+
+    UserRaffleOrderEntity queryNoUsedRaffleOrder(PartakeRaffleActivityEntity partakeRaffleActivityEntity);
+
+    ActivityAccountEntity queryActivityAccountByUserId(String userId, Long activityId);
+
+    ActivityAccountMonthEntity queryActivityAccountMonthByUserId(String userId, Long activityId, String month);
+
+    ActivityAccountDayEntity queryActivityAccountDayByUserId(String userId, Long activityId, String day);
+
+    void saveCreatePartakeOrderAggregate(CreatePartakeOrderAggregate createPartakeOrderAggregate);
 }
