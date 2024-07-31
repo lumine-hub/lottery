@@ -1,15 +1,12 @@
 package com.xlm.domain.activity.service;
 
-import com.xlm.domain.activity.model.entity.ActivityEntity;
-import com.xlm.domain.activity.model.entity.ActivityOrderEntity;
-import com.xlm.domain.activity.model.entity.ActivityShopCartEntity;
 import com.xlm.domain.activity.model.entity.SkuRechargeEntity;
 
 /**
  * @author xlm
  * 2024/7/28 下午3:35
  */
-public interface IRaffleOrder {
+public interface IRaffleActivityAccountQuotaService {
 
     /**
      * 创建 sku 账户充值订单，给用户增加抽奖次数
@@ -20,5 +17,5 @@ public interface IRaffleOrder {
      * @param skuRechargeEntity 活动商品充值实体对象
      * @return 活动ID
      */
-    String createSkuRechargeOrder(SkuRechargeEntity skuRechargeEntity);
+    String createOrder(SkuRechargeEntity skuRechargeEntity);
 }

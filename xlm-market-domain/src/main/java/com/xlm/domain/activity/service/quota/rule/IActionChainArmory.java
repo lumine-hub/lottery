@@ -1,4 +1,4 @@
-package com.xlm.domain.activity.service.rule;
+package com.xlm.domain.activity.service.quota.rule;
 
 /**
  * @author xlm

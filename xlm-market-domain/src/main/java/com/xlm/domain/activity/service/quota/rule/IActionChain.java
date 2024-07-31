@@ -1,4 +1,4 @@
-package com.xlm.domain.activity.service.rule;
+package com.xlm.domain.activity.service.quota.rule;
 
 import com.xlm.domain.activity.model.entity.ActivityCountEntity;
 import com.xlm.domain.activity.model.entity.ActivityEntity;

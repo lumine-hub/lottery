@@ -1,11 +1,11 @@
-package com.xlm.domain.activity.service;
+package com.xlm.domain.activity.service.quota;
 
-import com.alibaba.fastjson.JSON;
 import com.xlm.domain.activity.model.aggregate.CreateOrderAggregate;
 import com.xlm.domain.activity.model.entity.*;
 import com.xlm.domain.activity.repository.IActivityRepository;
-import com.xlm.domain.activity.service.rule.IActionChain;
-import com.xlm.domain.activity.service.rule.factory.DefaultActivityChainFactory;
+import com.xlm.domain.activity.service.IRaffleActivityAccountQuotaService;
+import com.xlm.domain.activity.service.quota.rule.IActionChain;
+import com.xlm.domain.activity.service.quota.rule.factory.DefaultActivityChainFactory;
 import com.xlm.types.enums.ResponseCode;
 import com.xlm.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
@@ -19,17 +19,17 @@ import javax.annotation.Resource;
  * 抽奖活动抽象类，定义标准的流程
  */
 @Slf4j
-public abstract class AbstractRaffleActivity implements IRaffleOrder {
+public abstract class AbstractRaffleActivityAccountQuota implements IRaffleActivityAccountQuotaService {
     @Resource
     protected DefaultActivityChainFactory defaultActivityChainFactory;
 
     protected IActivityRepository activityRepository;
 
-    public AbstractRaffleActivity(IActivityRepository activityRepository) {
+    public AbstractRaffleActivityAccountQuota(IActivityRepository activityRepository) {
         this.activityRepository = activityRepository;
     }
 
-    public String createSkuRechargeOrder(SkuRechargeEntity skuRechargeEntity) {
+    public String createOrder(SkuRechargeEntity skuRechargeEntity) {
         // 1.参数校验
         String userId = skuRechargeEntity.getUserId();
         Long sku = skuRechargeEntity.getSku();

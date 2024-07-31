@@ -1,7 +1,7 @@
 package com.xlm.test.domain.activity;
 
 import com.xlm.domain.activity.model.entity.SkuRechargeEntity;
-import com.xlm.domain.activity.service.IRaffleOrder;
+import com.xlm.domain.activity.service.IRaffleActivityAccountQuotaService;
 import com.xlm.domain.activity.service.armory.IActivityArmory;
 import com.xlm.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
@@ -24,7 +24,7 @@ import java.util.concurrent.CountDownLatch;
 public class RaffleOrderTest_16 {
 
     @Resource
-    private IRaffleOrder raffleOrder;
+    private IRaffleActivityAccountQuotaService raffleOrder;
     @Resource
     private IActivityArmory activityArmory;
 
@@ -48,7 +48,7 @@ public class RaffleOrderTest_16 {
                 skuRechargeEntity.setSku(9011L);
                 // outBusinessNo 作为幂等仿重使用，同一个业务单号2次使用会抛出索引冲突 Duplicate entry '700091009111' for key 'uq_out_business_no' 确保唯一性。
                 skuRechargeEntity.setOutBusinessNo(RandomStringUtils.randomNumeric(12));
-                String orderId = raffleOrder.createSkuRechargeOrder(skuRechargeEntity);
+                String orderId = raffleOrder.createOrder(skuRechargeEntity);
                 log.info("测试结果：{}", orderId);
             } catch (AppException e) {
                 log.warn(e.getInfo());

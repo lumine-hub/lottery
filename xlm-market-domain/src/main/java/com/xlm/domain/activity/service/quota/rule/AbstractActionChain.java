@@ -1,8 +1,4 @@
-package com.xlm.domain.activity.service.rule;
-
-import com.xlm.domain.activity.model.entity.ActivityCountEntity;
-import com.xlm.domain.activity.model.entity.ActivityEntity;
-import com.xlm.domain.activity.model.entity.ActivitySkuEntity;
+package com.xlm.domain.activity.service.quota.rule;
 
 /**
  * @author xlm

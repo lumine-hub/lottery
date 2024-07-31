@@ -1,10 +1,11 @@
-package com.xlm.domain.activity.service;
+package com.xlm.domain.activity.service.quota;
 
 import com.xlm.domain.activity.model.aggregate.CreateOrderAggregate;
 import com.xlm.domain.activity.model.entity.*;
 import com.xlm.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 import com.xlm.domain.activity.model.valobj.OrderStateVO;
 import com.xlm.domain.activity.repository.IActivityRepository;
+import com.xlm.domain.activity.service.IRaffleActivitySkuStockService;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.stereotype.Service;
 
@@ -17,9 +18,9 @@ import java.util.Date;
  * 抽奖活动抽象类，抽奖活动服务
  */
 @Service
-public class RaffleActivityService extends AbstractRaffleActivity implements ISkuStock{
+public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAccountQuota implements IRaffleActivitySkuStockService {
 
-    public RaffleActivityService(IActivityRepository activityRepository) {
+    public RaffleActivityAccountQuotaService(IActivityRepository activityRepository) {
         super(activityRepository);
     }
 
