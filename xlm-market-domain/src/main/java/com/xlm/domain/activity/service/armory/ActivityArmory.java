@@ -1,5 +1,6 @@
 package com.xlm.domain.activity.service.armory;
 
+import com.xlm.domain.activity.model.entity.ActivityEntity;
 import com.xlm.domain.activity.model.entity.ActivitySkuEntity;
 import com.xlm.domain.activity.repository.IActivityRepository;
 import com.xlm.types.common.Constants;
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author xlm
@@ -31,6 +33,21 @@ public class ActivityArmory implements IActivityArmory, IActivityDispatch {
 
         // 预热活动次数【查询时预热到缓存】
         activityRepository.queryRaffleActivityCountByActivityCountId(activitySkuEntity.getActivityCountId());
+
+        return true;
+    }
+
+
+    public boolean assembleActivitySkuByActivityId(Long activityId) {
+        List<ActivitySkuEntity> activitySkuEntities = activityRepository.queryActivitySkuListByActivityId(activityId);
+        for (ActivitySkuEntity activitySkuEntity : activitySkuEntities) {
+            cacheActivitySkuStockCount(activitySkuEntity.getSku(), activitySkuEntity.getStockCountSurplus());
+            // 预热活动次数【查询时预热到缓存】
+            activityRepository.queryRaffleActivityCountByActivityCountId(activitySkuEntity.getActivityCountId());
+        }
+
+        // 预热活动【查询时预热到缓存】
+        activityRepository.queryRaffleActivityByActivityId(activityId);
 
         return true;
     }

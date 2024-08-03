@@ -17,6 +17,8 @@ public interface IStrategyArmory {
      */
     boolean assembleLotteryStrategy(Long strategyId);
 
+    boolean assembleLotteryStrategyByActivityId(Long activityId);
+
     /**
      * 进行抽奖，获取概率值奖品查找表的结果
      *

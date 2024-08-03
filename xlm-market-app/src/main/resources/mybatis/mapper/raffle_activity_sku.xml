@@ -18,6 +18,12 @@
         from raffle_activity_sku
         where sku = #{sku}
     </select>
+    <select id="queryActivitySkuListByActivityId" resultMap="dataMap"
+            resultType="com.xlm.infrastructure.persistent.po.RaffleActivitySku">
+        select *
+        from raffle_activity_sku
+        where activity_id = #{activityId}
+    </select>
 
     <update id="updateActivitySkuStock" parameterType="java.lang.Long">
         update raffle_activity_sku
