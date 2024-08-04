@@ -2,6 +2,8 @@ package com.xlm.domain.strategy.service.rule.tree;
 
 import com.xlm.domain.strategy.service.rule.tree.factory.DefaultTreeFactory;
 
+import java.util.Date;
+
 /**
  * @author xlm
  * 2024/7/22 下午5:17
@@ -15,6 +17,6 @@ public interface ILogicTreeNode {
      * @param awardId
      * @return 过滤结果：应包含放行还是接管、awardId、ruleId
      */
-    DefaultTreeFactory.TreeActionEntity logic(String userId, Long strategyId, Integer awardId, String ruleValue);
+    DefaultTreeFactory.TreeActionEntity logic(String userId, Long strategyId, Integer awardId, String ruleValue, Date endDateTime);
 
 }

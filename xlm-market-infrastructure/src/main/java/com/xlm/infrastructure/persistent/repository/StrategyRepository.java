@@ -12,16 +12,14 @@ import com.xlm.types.common.Constants;
 import com.xlm.types.enums.ResponseCode;
 import com.xlm.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.codec.language.bm.Rule;
 import org.redisson.api.RBlockingQueue;
 import org.redisson.api.RDelayedQueue;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 import static com.xlm.types.enums.ResponseCode.UN_ASSEMBLED_STRATEGY_ARMORY;
@@ -226,17 +224,25 @@ public class StrategyRepository implements IStrategyRepository {
 
     @Override
     public boolean subtractionAwardStock(String cacheKey) {
+       return subtractionAwardStock(cacheKey, null);
+    }
+
+    @Override
+    public boolean subtractionAwardStock(String cacheKey, Date endDateTime) {
         long surplus = redisService.decr(cacheKey);
         if (surplus < 0) {
             redisService.setAtomicLong(cacheKey, 0);
             return false;
         }
-        // setNx 锁的目的是兜底，比如活动配置有 10 个库存，消耗开始 9、8、7、6 但因为一些问题，无论是redis还是其他系统导致的，运营需要重新调整恢复库存。但这个时候恢复错了为9个，但已经消耗到6个。那么 8、7、6 就会产生新的加锁key，这个加锁key会被redis已经加锁的key拦截，避免超卖。因为加锁不是竞争，不好费性能但可以做兜底，是个不错的选择。【实际中系统运行最容易出问题的点，就是运营配置问题和调整活动
         String lockKey = cacheKey + Constants.UNDERLINE + surplus;
-        Boolean lock = redisService.setNx(lockKey);
-        if (!lock) {
-            log.info("库存加锁失败 {}", lockKey);
+        boolean lock = false;
+        if (endDateTime != null) {
+            long expireMillis = endDateTime.getTime() - System.currentTimeMillis() + TimeUnit.DAYS.toMillis(1);
+            lock = redisService.setNx(lockKey, expireMillis, TimeUnit.MILLISECONDS);
+        }else {
+            redisService.setNx(lockKey);
         }
+        if (!lock) log.info("策略奖品库存加锁失败 {}", lockKey);
         return lock;
     }
 
@@ -309,6 +315,17 @@ public class StrategyRepository implements IStrategyRepository {
         if (null == raffleActivityAccountDay) return 0;
         // 总次数 - 剩余的，等于今日参与的
         return raffleActivityAccountDay.getDayCount() - raffleActivityAccountDay.getDayCountSurplus();
+    }
+
+    @Override
+    public Map<String, Integer> queryAwardRuleLockCount(String[] treeIds) {
+        if (treeIds == null || treeIds.length == 0) return new HashMap<>();
+        List<RuleTreeNode> ruleTreeNodes = ruleTreeNodeDao.queryRuleLocks(treeIds);
+        HashMap<String, Integer> result = new HashMap<>();
+        for (RuleTreeNode ruleTreeNode : ruleTreeNodes) {
+            result.put(ruleTreeNode.getTreeId(), Integer.valueOf(ruleTreeNode.getRuleValue()));
+        }
+        return result;
     }
 
 }

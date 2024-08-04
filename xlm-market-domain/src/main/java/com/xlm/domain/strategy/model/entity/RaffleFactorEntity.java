@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 /**
  * @author xlm
  * 2024/7/19 下午5:44
@@ -22,5 +24,7 @@ public class RaffleFactorEntity {
     private Long strategyId;
 
     private Integer awardId;
+    /** 结束时间 */
+    private Date endDateTime;
 
 }

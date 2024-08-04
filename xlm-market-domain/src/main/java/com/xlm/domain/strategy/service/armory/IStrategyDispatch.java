@@ -1,5 +1,7 @@
 package com.xlm.domain.strategy.service.armory;
 
+import java.util.Date;
+
 /**
  * @author xlm
  * 2024/7/18 下午12:39
@@ -18,5 +20,5 @@ public interface IStrategyDispatch {
     Integer getRandomAwardId(Long strategyId, String ruleWeightValue);
 
     // 库存库减
-    boolean subtractionAwardStock(Long strategyId, Integer awardId);
+    boolean subtractionAwardStock(Long strategyId, Integer awardId, Date endDateTime);
 }

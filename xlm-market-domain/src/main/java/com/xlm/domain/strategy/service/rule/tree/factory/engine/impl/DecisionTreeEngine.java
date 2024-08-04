@@ -9,6 +9,7 @@ import com.xlm.domain.strategy.service.rule.tree.factory.DefaultTreeFactory;
 import com.xlm.domain.strategy.service.rule.tree.factory.engine.IDecisionTreeEngine;
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -31,21 +32,21 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
     }
 
     @Override
-    public DefaultTreeFactory.StrategyAwardVO process(String userId, Long strategyId, Integer awardId) {
+    public DefaultTreeFactory.StrategyAwardVO process(String userId, Long strategyId, Integer awardId, Date endDateTime) {
         DefaultTreeFactory.StrategyAwardVO strategyAwardData = null;
 
         // 获取决策树的第一个执行节点，比如rule_lock还是rule_stock还是其他
         String nextNode = ruleTreeVO.getTreeRootRuleNode();
         Map<String, RuleTreeNodeVO> treeNodeMap = ruleTreeVO.getTreeNodeMap();
 
-        // 获取起始节点对应的规则tree_node表，这个表有规则（ryle_lock）,还有rule_value（2，抽2次解锁）「根节点记录了第一个要执行的规则」
+        // 获取起始节点对应的规则tree_node表，这个表有规则（rule_lock）,还有rule_value（2，抽2次解锁）「根节点记录了第一个要执行的规则」
         RuleTreeNodeVO ruleTreeNode = treeNodeMap.get(nextNode);
         while (null != nextNode) { // 假如是rule_lock【判断抽奖2次后解锁】
             // 获取rule_lock对应的实现类
             ILogicTreeNode logicTreeNode = logicTreeNodeGroup.get(ruleTreeNode.getRuleKey());
             String ruleValue = ruleTreeNode.getRuleValue(); // 得到rule_value，rule_lock对应的抽2次解锁，rule_luck_award对应兜底奖励101:1,100， rule_stock对应null
             // 决策节点计算，结果可能是放行，也可能不放行
-            DefaultTreeFactory.TreeActionEntity logicEntity = logicTreeNode.logic(userId, strategyId, awardId, ruleValue);
+            DefaultTreeFactory.TreeActionEntity logicEntity = logicTreeNode.logic(userId, strategyId, awardId, ruleValue, endDateTime);
             RuleLogicCheckTypeVO ruleLogicCheckTypeVO = logicEntity.getRuleLogicCheckType();
             strategyAwardData = logicEntity.getStrategyAwardVO();
             log.info("决策树引擎【{}】treeId:{} node:{} code:{}", ruleTreeVO.getTreeName(), ruleTreeVO.getTreeId(), nextNode, ruleLogicCheckTypeVO.getCode());

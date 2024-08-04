@@ -7,6 +7,7 @@ import com.xlm.domain.strategy.model.vo.RuleTreeVO;
 import com.xlm.domain.strategy.model.vo.StrategyAwardRuleModelVO;
 import com.xlm.domain.strategy.model.vo.StrategyAwardStockKeyVO;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -42,6 +43,8 @@ public interface IStrategyRepository {
 
     boolean subtractionAwardStock(String cacheKey);
 
+    boolean subtractionAwardStock(String cacheKey, Date endDateTime);
+
     void awardStockConsumeSendQueue(StrategyAwardStockKeyVO build);
 
     StrategyAwardStockKeyVO takeQueueValue();
@@ -54,4 +57,6 @@ public interface IStrategyRepository {
     Long queryStrategyIdByActivityId(Long activityId);
 
     Integer queryTodayUserRaffleCount(String userId, Long strategyId);
+
+    Map<String, Integer> queryAwardRuleLockCount(String[] treeIds);
 }
