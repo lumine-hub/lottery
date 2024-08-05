@@ -86,35 +86,57 @@ public class RaffleActivityController implements IRaffleActivityService {
     @Override
     @PostMapping("draw")
     public Response<ActivityDrawResponseDTO> draw(@RequestBody ActivityDrawRequestDTO request) {
+        try {
+            // 1.参数校验
+            if (StringUtils.isBlank(request.getUserId()) || null == request.getActivityId()) {
+                throw new AppException(ResponseCode.ILLEGAL_PARAMETER.getCode(), ResponseCode.ILLEGAL_PARAMETER.getInfo());
+            }
 
-        // 1.参数校验
-        if (StringUtils.isBlank(request.getUserId()) || null == request.getActivityId()) {
-            throw new AppException(ResponseCode.ILLEGAL_PARAMETER.getCode(), ResponseCode.ILLEGAL_PARAMETER.getInfo());
+            // 2.参与活动 - 创建参与记录订单
+            UserRaffleOrderEntity orderEntity = raffleActivityPartakeService.createOrder(PartakeRaffleActivityEntity.builder()
+                    .activityId(request.getActivityId())
+                    .userId(request.getUserId())
+                    .build());
+            // 3. 抽奖策略 - 执行抽奖
+            RaffleAwardEntity raffleAwardEntity = raffleStrategy.performRaffle(RaffleFactorEntity.builder()
+                    .userId(orderEntity.getUserId())
+                    .strategyId(orderEntity.getStrategyId())
+                    .endDateTime(orderEntity.getEndDateTime())
+                    .build());
+            // 4. 存放结果 - 写入中奖记录
+            UserAwardRecordEntity userAwardRecord = UserAwardRecordEntity.builder()
+                    .userId(orderEntity.getUserId())
+                    .activityId(orderEntity.getActivityId())
+                    .strategyId(orderEntity.getStrategyId())
+                    .orderId(orderEntity.getOrderId())
+                    .awardId(raffleAwardEntity.getAwardId())
+                    .awardTitle(raffleAwardEntity.getAwardTitle())
+                    .awardTime(new Date())
+                    .awardState(AwardStateVO.create)
+                    .build();
+            awardService.saveUserAwardRecord(userAwardRecord);
+            // 5. 返回结果
+            return Response.<ActivityDrawResponseDTO>builder()
+                    .code(ResponseCode.SUCCESS.getCode())
+                    .info(ResponseCode.SUCCESS.getInfo())
+                    .data(ActivityDrawResponseDTO.builder()
+                            .awardId(raffleAwardEntity.getAwardId())
+                            .awardTitle(raffleAwardEntity.getAwardTitle())
+                            .awardIndex(raffleAwardEntity.getSort())
+                            .build())
+                    .build();
+        } catch (AppException e) {
+            log.error("活动抽奖失败 userId:{} activityId:{}", request.getUserId(), request.getActivityId(), e);
+            return Response.<ActivityDrawResponseDTO>builder()
+                    .code(e.getCode())
+                    .info(e.getInfo())
+                    .build();
+        } catch (Exception e) {
+            log.error("活动抽奖失败 userId:{} activityId:{}", request.getUserId(), request.getActivityId(), e);
+            return Response.<ActivityDrawResponseDTO>builder()
+                    .code(ResponseCode.UN_ERROR.getCode())
+                    .info(ResponseCode.UN_ERROR.getInfo())
+                    .build();
         }
-
-        // 2.参与活动 - 创建参与记录订单
-        UserRaffleOrderEntity orderEntity = raffleActivityPartakeService.createOrder(PartakeRaffleActivityEntity.builder()
-                .activityId(request.getActivityId())
-                .userId(request.getUserId())
-                .build());
-        // 3. 抽奖策略 - 执行抽奖
-        RaffleAwardEntity raffleAwardEntity = raffleStrategy.performRaffle(RaffleFactorEntity.builder()
-                .userId(orderEntity.getUserId())
-                .strategyId(orderEntity.getStrategyId())
-                .endDateTime(orderEntity.getEndDateTime())
-                .build());
-        // 4. 存放结果 - 写入中奖记录
-        UserAwardRecordEntity userAwardRecord = UserAwardRecordEntity.builder()
-                .userId(orderEntity.getUserId())
-                .activityId(orderEntity.getActivityId())
-                .strategyId(orderEntity.getStrategyId())
-                .orderId(orderEntity.getOrderId())
-                .awardId(raffleAwardEntity.getAwardId())
-                .awardTitle(raffleAwardEntity.getAwardTitle())
-                .awardTime(new Date())
-                .awardState(AwardStateVO.create)
-                .build();
-        awardService.saveUserAwardRecord(userAwardRecord);
-        return null;
     }
 }
