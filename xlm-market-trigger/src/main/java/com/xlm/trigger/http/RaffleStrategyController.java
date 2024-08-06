@@ -35,7 +35,7 @@ import java.util.stream.Collectors;
 @Slf4j
 @RestController()
 @CrossOrigin("${app.config.cross-origin}")
-@RequestMapping("/api/${app.config.api-version}/raffle/")
+@RequestMapping("/api/${app.config.api-version}/raffle/strategy/")
 public class RaffleStrategyController implements IRaffleStrategyService {
     @Resource
     private IRaffleAward raffleAward;
@@ -50,7 +50,7 @@ public class RaffleStrategyController implements IRaffleStrategyService {
 
     /**
      * 策略装配，将策略信息装配到缓存中
-     * <a href="http://localhost:8091/api/v1/raffle/strategy_armory">/api/v1/raffle/strategy_armory</a>
+     * <a href="http://localhost:8091/api/v1/raffle/strategy/strategy_armory">/api/v1/raffle/strategy_armory</a>
      *
      * @param strategyId 策略ID
      * @return 装配结果
@@ -79,7 +79,7 @@ public class RaffleStrategyController implements IRaffleStrategyService {
 
     /**
      * 查询奖品列表
-     * <a href="http://localhost:8091/api/v1/raffle/query_raffle_award_list">/api/v1/raffle/query_raffle_award_list</a>
+     * <a href="http://localhost:8091/api/v1/raffle/strategy/query_raffle_award_list">/api/v1/raffle/query_raffle_award_list</a>
      * 请求参数 raw json
      *
      * @param request {"strategyId":1000001}
@@ -139,7 +139,7 @@ public class RaffleStrategyController implements IRaffleStrategyService {
 
     /**
      * 随机抽奖接口
-     * <a href="http://localhost:8091/api/v1/raffle/random_raffle">/api/v1/raffle/random_raffle</a>
+     * <a href="http://localhost:8091/api/v1/raffle/strategy/random_raffle">/api/v1/raffle/random_raffle</a>
      *
      * @param requestDTO 请求参数 {"strategyId":1000001}
      * @return 抽奖结果
