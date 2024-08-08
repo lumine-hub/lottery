@@ -35,7 +35,7 @@ public class RebateMessageCustomer {
     public void listen(String message) {
         try {
             log.info("监听用户行为返利消息 topic: {} message: {}", topic, message);
-            // 1. 转换消息
+            // 1. 转换消息（好好看这个用法，有点复杂）
             BaseEvent.EventMessage<SendRebateMessageEvent.RebateMessage> eventMessage = JSON.parseObject(message, new TypeReference<BaseEvent.EventMessage<SendRebateMessageEvent.RebateMessage>>() {
             }.getType());
             SendRebateMessageEvent.RebateMessage rebateMessage = eventMessage.getData();

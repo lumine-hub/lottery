@@ -4,6 +4,7 @@ import com.xlm.domain.strategy.model.entity.StrategyAwardEntity;
 import com.xlm.domain.strategy.model.entity.StrategyEntity;
 import com.xlm.domain.strategy.model.entity.StrategyRuleEntity;
 import com.xlm.domain.strategy.model.vo.RuleTreeVO;
+import com.xlm.domain.strategy.model.vo.RuleWeightVO;
 import com.xlm.domain.strategy.model.vo.StrategyAwardRuleModelVO;
 import com.xlm.domain.strategy.model.vo.StrategyAwardStockKeyVO;
 
@@ -59,4 +60,12 @@ public interface IStrategyRepository {
     Integer queryTodayUserRaffleCount(String userId, Long strategyId);
 
     Map<String, Integer> queryAwardRuleLockCount(String[] treeIds);
+
+    /**
+     * 查询奖品权重配置
+     *
+     * @param strategyId 策略ID
+     * @return 权重规则
+     */
+    List<RuleWeightVO> queryAwardRuleWeight(Long strategyId);
 }
