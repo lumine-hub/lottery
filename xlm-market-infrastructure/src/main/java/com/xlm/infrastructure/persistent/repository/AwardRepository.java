@@ -2,22 +2,25 @@ package com.xlm.infrastructure.persistent.repository;
 
 import cn.bugstack.middleware.db.router.strategy.IDBRouterStrategy;
 import com.alibaba.fastjson.JSON;
+import com.xlm.domain.award.model.aggregate.GiveOutPrizesAggregate;
 import com.xlm.domain.award.model.aggregate.UserAwardRecordAggregate;
 import com.xlm.domain.award.model.entity.TaskEntity;
 import com.xlm.domain.award.model.entity.UserAwardRecordEntity;
+import com.xlm.domain.award.model.entity.UserCreditAwardEntity;
+import com.xlm.domain.award.model.valobj.AccountStatusVO;
 import com.xlm.domain.award.repository.IAwardRepository;
 import com.xlm.infrastructure.event.EventPublisher;
-import com.xlm.infrastructure.persistent.dao.ITaskDao;
-import com.xlm.infrastructure.persistent.dao.IUserAwardRecordDao;
-import com.xlm.infrastructure.persistent.dao.IUserRaffleOrderDao;
+import com.xlm.infrastructure.persistent.dao.*;
 import com.xlm.infrastructure.persistent.po.Task;
 import com.xlm.infrastructure.persistent.po.UserAwardRecord;
+import com.xlm.infrastructure.persistent.po.UserCreditAccount;
 import com.xlm.infrastructure.persistent.po.UserRaffleOrder;
 import com.xlm.types.enums.ResponseCode;
 import com.xlm.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.TransactionException;
 import org.springframework.transaction.support.TransactionTemplate;
 
 import javax.annotation.Resource;
@@ -30,12 +33,17 @@ import javax.annotation.Resource;
 @Component
 public class AwardRepository implements IAwardRepository {
 
+
+    @Resource
+    private IAwardDao awardDao;
     @Resource
     private ITaskDao taskDao;
     @Resource
     private IUserAwardRecordDao userAwardRecordDao;
     @Resource
     private IUserRaffleOrderDao userRaffleOrderDao;
+    @Resource
+    private IUserCreditAccountDao userCreditAccountDao;
     @Resource
     private IDBRouterStrategy dbRouter;
     @Resource
@@ -99,16 +107,76 @@ public class AwardRepository implements IAwardRepository {
             dbRouter.clear();
         }
 
-//        try {
-//            // 发送消息【在事务外执行，如果失败还有任务补偿】
-//            eventPublisher.publish(task.getTopic(), task.getMessage());
-//            // 更新数据库记录，task 任务表
-//            taskDao.updateTaskSendMessageCompleted(task);
-//        } catch (Exception e) {
-//            log.error("写入中奖记录，发送MQ消息失败 userId: {} topic: {}", userId, task.getTopic());
-//            taskDao.updateTaskSendMessageFail(task);
-//        }
+        // 不跟上面写在同一个事务是因为有补偿机制
+        try {
+            // 发送消息【在事务外执行，如果失败还有任务补偿】
+            eventPublisher.publish(task.getTopic(), task.getMessage());
+            // 更新数据库记录，task 任务表
+            taskDao.updateTaskSendMessageCompleted(task);
+        } catch (Exception e) {
+            log.error("写入中奖记录，发送MQ消息失败 userId: {} topic: {}", userId, task.getTopic());
+            taskDao.updateTaskSendMessageFail(task);
+        }
 
     }
 
+    @Override
+    public void saveGiveOutPrizesAggregate(GiveOutPrizesAggregate giveOutPrizesAggregate) {
+        String userId = giveOutPrizesAggregate.getUserId();
+        UserCreditAwardEntity userCreditAwardEntity = giveOutPrizesAggregate.getUserCreditAwardEntity();
+        UserAwardRecordEntity userAwardRecordEntity = giveOutPrizesAggregate.getUserAwardRecordEntity();
+
+        // 更新发奖记录
+        UserAwardRecord userAwardRecordReq = new UserAwardRecord();
+        userAwardRecordReq.setUserId(userId);
+        userAwardRecordReq.setOrderId(userAwardRecordEntity.getOrderId());
+        userAwardRecordReq.setAwardState(userAwardRecordEntity.getAwardState().getCode());
+
+        // 更新用户积分 「首次则插入数据」
+        UserCreditAccount userCreditAccountReq = new UserCreditAccount();
+        userCreditAccountReq.setUserId(userCreditAwardEntity.getUserId());
+        userCreditAccountReq.setTotalAmount(userCreditAwardEntity.getCreditAmount());
+        userCreditAccountReq.setAvailableAmount(userCreditAwardEntity.getCreditAmount());
+        userCreditAccountReq.setAccountStatus(AccountStatusVO.open.getCode());
+
+        try {
+            dbRouter.doRouter(userCreditAwardEntity.getUserId());
+
+            transactionTemplate.execute(status -> {
+                try {
+                    // 更新积分 || 创建积分账户
+                    int updateAccountCount = userCreditAccountDao.updateAddAmount(userCreditAccountReq);
+                    if (0 == updateAccountCount) {
+                        userCreditAccountDao.insert(userCreditAccountReq);
+                    }
+                    // 更新奖品记录
+                    int updateAwardCount = userAwardRecordDao.updateAwardRecordCompletedState(userAwardRecordReq);
+                    if (0 == updateAwardCount) {
+                        log.warn("更新中奖记录，重复更新拦截 userId:{} giveOutPrizesAggregate:{}", userId, JSON.toJSONString(giveOutPrizesAggregate));
+                        status.setRollbackOnly();
+                    }
+                    return 1;
+
+                } catch (DuplicateKeyException e) {
+                    status.setRollbackOnly();
+                    log.error("更新中奖记录，唯一索引冲突 userId: {} ", userId, e);
+                    throw new AppException(ResponseCode.INDEX_DUP.getCode(), e);
+                }
+            });
+
+        } finally {
+            dbRouter.clear();
+        }
+
+    }
+
+    @Override
+    public String queryAwardConfig(Integer awardId) {
+        return awardDao.queryAwardConfigByAwardId(awardId);
+    }
+
+    @Override
+    public String queryAwardKey(Integer awardId) {
+        return awardDao.queryAwardKeyByAwardId(awardId);
+    }
 }
