@@ -511,7 +511,7 @@ public class ActivityRepository implements IActivityRepository {
         // 如果没有创建日账户，则从总账户中获取日总额度填充。「当新创建日账户时，会获得总账户额度」
         if (null == raffleActivityAccountDay) {
             activityAccountEntity.setDayCount(raffleActivityAccount.getDayCount());
-            activityAccountEntity.setDayCountSurplus(raffleActivityAccount.getDayCount());
+            activityAccountEntity.setDayCountSurplus(raffleActivityAccount.getDayCountSurplus());
         } else {
             activityAccountEntity.setDayCount(raffleActivityAccountDay.getDayCount());
             activityAccountEntity.setDayCountSurplus(raffleActivityAccountDay.getDayCountSurplus());
@@ -520,7 +520,7 @@ public class ActivityRepository implements IActivityRepository {
         // 如果没有创建月账户，则从总账户中获取月总额度填充。「当新创建日账户时，会获得总账户额度」
         if (null == raffleActivityAccountMonth) {
             activityAccountEntity.setMonthCount(raffleActivityAccount.getMonthCount());
-            activityAccountEntity.setMonthCountSurplus(raffleActivityAccount.getMonthCount());
+            activityAccountEntity.setMonthCountSurplus(raffleActivityAccount.getMonthCountSurplus());
         } else {
             activityAccountEntity.setMonthCount(raffleActivityAccountMonth.getMonthCount());
             activityAccountEntity.setMonthCountSurplus(raffleActivityAccountMonth.getMonthCountSurplus());
