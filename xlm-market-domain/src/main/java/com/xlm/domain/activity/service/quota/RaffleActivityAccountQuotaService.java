@@ -6,10 +6,13 @@ import com.xlm.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 import com.xlm.domain.activity.model.valobj.OrderStateVO;
 import com.xlm.domain.activity.repository.IActivityRepository;
 import com.xlm.domain.activity.service.IRaffleActivitySkuStockService;
+import com.xlm.domain.activity.service.quota.policy.ITradePolicy;
+import com.xlm.domain.activity.service.quota.rule.factory.DefaultActivityChainFactory;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
+import java.util.Map;
 
 
 /**
@@ -20,8 +23,8 @@ import java.util.Date;
 @Service
 public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAccountQuota implements IRaffleActivitySkuStockService {
 
-    public RaffleActivityAccountQuotaService(IActivityRepository activityRepository) {
-        super(activityRepository);
+    public RaffleActivityAccountQuotaService(IActivityRepository activityRepository,  Map<String, ITradePolicy> tradePolicyGroup) {
+        super(activityRepository, tradePolicyGroup);
     }
 
 
@@ -40,7 +43,8 @@ public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAcc
         activityOrderEntity.setTotalCount(activityCountEntity.getTotalCount());
         activityOrderEntity.setDayCount(activityCountEntity.getDayCount());
         activityOrderEntity.setMonthCount(activityCountEntity.getMonthCount());
-        activityOrderEntity.setState(OrderStateVO.completed);
+        activityOrderEntity.setPayAmount(activitySkuEntity.getProductAmount());
+//        activityOrderEntity.setState(OrderStateVO.completed);
         activityOrderEntity.setOutBusinessNo(skuRechargeEntity.getOutBusinessNo());
 
         // 构建聚合对象
@@ -57,7 +61,7 @@ public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAcc
 
     @Override
     protected void doSaveOrder(CreateQuotaOrderAggregate createQuotaOrderAggregate) {
-        activityRepository.doSaveOrder(createQuotaOrderAggregate);
+        activityRepository.doSaveNoPayOrder(createQuotaOrderAggregate);
     }
 
     @Override
@@ -78,6 +82,11 @@ public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAcc
     @Override
     public void clearActivitySkuStock(Long sku) {
         activityRepository.clearActivitySkuStock(sku);
+    }
+
+    @Override
+    public void updateOrder(DeliveryOrderEntity deliveryOrderEntity) {
+        activityRepository.updateOrder(deliveryOrderEntity);
     }
 
     @Override

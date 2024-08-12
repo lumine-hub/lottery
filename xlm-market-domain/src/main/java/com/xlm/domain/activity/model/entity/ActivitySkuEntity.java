@@ -4,6 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.math.BigDecimal;
+
 /**
  * @author xlm
  * 2024/7/28 下午3:28
@@ -24,5 +27,8 @@ public class ActivitySkuEntity {
     private Integer stockCount;
     /** 剩余库存 */
     private Integer stockCountSurplus;
+    /** 商品金额【积分】 */
+    private BigDecimal productAmount;
+
 
 }
