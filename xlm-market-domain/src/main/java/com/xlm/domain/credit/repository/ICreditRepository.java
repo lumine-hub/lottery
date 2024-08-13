@@ -2,6 +2,7 @@ package com.xlm.domain.credit.repository;
 
 
 import com.xlm.domain.credit.model.aggregate.TradeAggregate;
+import com.xlm.domain.credit.model.entity.CreditAccountEntity;
 
 /**
  * @author xlm
@@ -11,4 +12,5 @@ public interface ICreditRepository {
 
     void saveUserCreditTradeOrder(TradeAggregate tradeAggregate);
 
+    CreditAccountEntity queryUserCreditAccount(String userId);
 }

@@ -5,6 +5,7 @@ import com.xlm.domain.activity.model.aggregate.CreateQuotaOrderAggregate;
 import com.xlm.domain.activity.model.entity.*;
 import com.xlm.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 
+import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
@@ -58,4 +59,10 @@ public interface IActivityRepository {
     ActivityAccountEntity queryActivityAccountEntity(Long activityId, String userId);
 
     void updateOrder(DeliveryOrderEntity deliveryOrderEntity);
+
+    List<SkuProductEntity> querySkuProductEntityListByActivityId(Long activityId);
+
+    UnpaidActivityOrderEntity queryUnpaidActivityOrder(SkuRechargeEntity skuRechargeEntity);
+
+    BigDecimal queryUserCreditAccountAmount(String userId);
 }

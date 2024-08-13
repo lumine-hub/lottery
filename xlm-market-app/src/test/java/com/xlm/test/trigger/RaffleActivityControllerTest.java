@@ -2,10 +2,7 @@ package com.xlm.test.trigger;
 
 import com.alibaba.fastjson.JSON;
 import com.xlm.trigger.api.IRaffleActivityService;
-import com.xlm.trigger.api.dto.ActivityDrawRequestDTO;
-import com.xlm.trigger.api.dto.ActivityDrawResponseDTO;
-import com.xlm.trigger.api.dto.UserActivityAccountRequestDTO;
-import com.xlm.trigger.api.dto.UserActivityAccountResponseDTO;
+import com.xlm.trigger.api.dto.*;
 import com.xlm.types.model.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
@@ -14,6 +11,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
+import java.math.BigDecimal;
+import java.util.List;
 import java.util.concurrent.CountDownLatch;
 
 @Slf4j
@@ -31,8 +30,8 @@ public class RaffleActivityControllerTest {
     }
 
     @Test
-    public void test_draw() throws InterruptedException {
-        for (int i = 0; i < 1; i++) {
+    public void test_draw() {
+        for (int i = 0; i < 10; i++) {
             ActivityDrawRequestDTO request = new ActivityDrawRequestDTO();
             request.setActivityId(100301L);
             request.setUserId("xlm");
@@ -40,7 +39,6 @@ public class RaffleActivityControllerTest {
 
             log.info("请求参数：{}", JSON.toJSONString(request));
             log.info("测试结果：{}", JSON.toJSONString(response));
-            new CountDownLatch(1).await();
         }
     }
 
@@ -55,12 +53,12 @@ public class RaffleActivityControllerTest {
         log.info("测试结果：{}", JSON.toJSONString(response));
 
         // 让程序挺住方便测试，也可以去掉
-        new CountDownLatch(1).await();
+//        new CountDownLatch(1).await();
     }
 
     @Test
     public void test_calendarSignRebate() throws InterruptedException {
-        Response<Boolean> response = raffleActivityService.calendarSignRebate("xlm");
+        Response<Boolean> response = raffleActivityService.calendarSignRebate("user002");
         log.info("测试结果：{}", JSON.toJSONString(response));
 
         // 让程序挺住方便测试，也可以去掉
@@ -84,6 +82,34 @@ public class RaffleActivityControllerTest {
 
         log.info("请求参数：{}", JSON.toJSONString(request));
         log.info("测试结果：{}", JSON.toJSONString(response));
+    }
+
+    @Test
+    public void test_querySkuProductListByActivityId() {
+        Long request = 100301L;
+        Response<List<SkuProductResponseDTO>> response = raffleActivityService.querySkuProductListByActivityId(request);
+        log.info("请求参数：{}", JSON.toJSONString(request));
+        log.info("测试结果：{}", JSON.toJSONString(response));
+    }
+
+    @Test
+    public void test_queryUserCreditAccount() {
+        String request = "xlm";
+        Response<BigDecimal> response = raffleActivityService.queryUserCreditAccount(request);
+        log.info("请求参数：{}", JSON.toJSONString(request));
+        log.info("测试结果：{}", JSON.toJSONString(response));
+    }
+
+    @Test
+    public void test_creditPayExchangeSku() throws InterruptedException {
+        SkuProductShopCartRequestDTO request = new SkuProductShopCartRequestDTO();
+        request.setUserId("xlm");
+        request.setSku(9011L);
+        Response<Boolean> response = raffleActivityService.creditPayExchangeSku(request);
+        log.info("请求参数：{}", JSON.toJSONString(request));
+        log.info("测试结果：{}", JSON.toJSONString(response));
+
+        new CountDownLatch(1).await();
     }
 
 }
